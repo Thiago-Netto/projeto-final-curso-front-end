@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Monster Hunter World - Alterar Diário de Pesquisa</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Link quando o SCSS gerar o CSS -->
+    <link rel='stylesheet' type='text/css' media='screen' href='./styles/main.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    
+</head>
+<body>
+    <!--Divisão para poder criar fundo separado dos elementos-->>
+    <div class="conteudo">
+        
+        <header>
+            <nav class="navbar fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Diáro de pesquisa</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="modificar.html">Alterar Diário de Pesquisa</a>
+                        </li>                         
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Habitats
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="ancientforest.html">Ancient Forest</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                            <li><a class="dropdown-item" href="wildspirewaste.html">Wildspire Waste</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="coralhighlands.html">Coral Highlands</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="rottenvale.html">Rotten Vale</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="eldersrecess">Elder's Recess</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="speciallocations.html">Special Locations</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="hoarfrostreach.html">Hoarfrost Reach</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="guidinglands.html">Guiding Lands</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">Sobre</a>
+                          </li>
+                      </ul>                      
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="pesquisa">             
+                <form class="" role="search" style="width: 75%;">
+                    <div class="mb-3">
+                        <label for="pesquisar-monstro">Pesquisar Monstro</label>
+                        <input id="pesquisar-monstro" class="form-control" type="search" placeholder="Rathalos, Nergigante, ..." aria-label="Search">
+                        <div id="search" class="form-text">Insira o nome do monstro que procura </div>
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </div>
+                  </form>
+            </section>
+            <section>
+                <div id="resultado-pesquisa">
+
+                </div>
+            </section>
+            <!--Criar-->
+            <section>
+                <form id="criarmonstro">
+                    <h2>Adicionar Monstro</h2>
+                    
+                    <label for="name-do-monstro">Nome</label>
+                    <input id="name-do-monstro" type="text">
+                    
+                    <label for="type-do-monstro">Tipo</label>
+                    <select name="type-do-monstro" id="type-do-monstro">
+                      <option value="pequeno">Pequeno</option>
+                      <option value="grande">Grande</option>
+                    </select>
+                    
+                    <label for="especie-do-monstro">Espécie</label>
+                    <input id="especie-do-monstro" type="text">
+                    
+                    <label for="descricao-do-monstro">Descrição</label>
+                    <textarea name="descricao-do-monstro" id="descricao-do-monstro" cols="60" rows="5"></textarea>
+                    
+                    <label for="elementos-do-monstro">Elemento</label>
+                    <select name="elementos-do-monstro" id="elementos-do-monstro">
+                      <option value="fogo">Fogo</option>
+                      <option value="agua">Água</option>
+                      <option value="trovao">Trovão</option>
+                      <option value="gelo">Gelo</option>
+                      <option value="dragao">Dragão</option>
+                    </select>
+                    
+                    <label for="aflicoes-do-monstro">Aflições que pode infligir</label>
+                    <select name="aflicoes-do-monstro" id="aflicoes-do-monstro">
+                      <option value="veneno">Veneno</option>
+                      <option value="paralisia">Paralisia</option>
+                      <option value="sono">Sono</option>
+                      <option value="blastblight">Blastblight</option>
+                      <option value="fireblight">Fireblight</option>
+                      <option value="waterblight">Waterblight</option>
+                      <option value="thunderblight">thunderblight</option>
+                      <option value="iceblight">Iceblight</option>
+                      <option value="dragonblight">Dragonblight</option>
+                      <option value="nocaute">Nocaute</option>
+                      <option value="sangramento">Sangramento</option>
+                    </select>
+        
+                    <label for="locais-do-monstro">Habitat</label>
+                    <select name="locais-do-monstro" id="locais-do-monstro">
+                      <option value="ancientForest">Ancient Forest</option>
+                      <option value="wildspireWaste">WildspireWaste</option>
+                      <option value="coralHighlands">Coral Highlands</option>
+                      <option value="rottenVale">Rotten Vale</option>
+                      <option value="eldersRecess">Elder's Recess</option>
+                      <option value="everstream">Everstream</option>
+                      <option value="greatravine">Great Ravine</option>
+                    </select>
+                    
+                    <label for="partes-do-monstro">Partes</label>
+                    <textarea name="partes-do-monstro" id="partes-do-monstro" cols="60" rows="20"></textarea>
+        
+                    <label for="resistencia-do-monstro">Resistência a Aflições</label>
+                    <textarea name="resistencia-do-monstro" id="resistencia-do-monstro" cols="60" rows="20"></textarea>
+                    
+                    <label for="recompensa-lr-do-monstro">Recompensas Low Rank</label>
+                    <textarea name="recompensa-lr-do-monstro" id="recompensa-lr-do-monstro" cols="60" rows="20"></textarea>
+        
+                    <label for="recompensa-hr-do-monstro">Recompensas High Rank</label>
+                    <textarea name="recompensa-hr-do-monstro" id="recompensa-hr-do-monstro" cols="60" rows="20"></textarea>
+        
+                    <label for="partes-quebraveis-do-monstro">Partes Quebráveis</label>
+                    <select name="partes-quebraveis-do-monstro" id="partes-quebraveis-do-monstro">
+                      <option value="cabeca">Cabeça</option>
+                      <option value="corpo">Corpo</option>
+                      <option value="bracos">Braços</option>
+                      <option value="pernas">Pernas</option>
+                      <option value="asas">asas</option>
+                      <option value="cauda">Cauda</option>
+                    </select>
+        
+                    <label for="icon-do-monstro"></label>
+                    <input id="icon-do-monstro" type="url">
+        
+                    <label for="img-do-monstro"></label>
+                    <input id="img-do-monstro" type="url">
+                    
+                    <button id="btn-create">Adicionar Monstro</button>
+                  </form>
+            </section>
+            <!--Atualizar-->
+            <section>
+                <form id="atualizarmonstro">
+                    <h2>Atualizar Monstro</h2>
+                    <label for="id-do-monstro-updt">Número do monstro</label>
+                    <input id="id-do-monstro-updt" type="number">
+        
+                    <label for="name-do-monstro-updt">Nome</label>
+                    <input id="name-do-monstro-updt" type="text">
+                    
+                    <label for="type-do-monstro-updt">Tipo</label>
+                    <select name="type-do-monstro-updt" id="type-do-monstro-updt">
+                      <option value="pequeno">Pequeno</option>
+                      <option value="grande">Grande</option>
+                    </select>
+                    
+                    <label for="especie-do-monstro-updt">Espécie</label>
+                    <input id="especie-do-monstro-updt" type="text">
+                    
+                    <label for="descricao-do-monstro-updt">Descrição</label>
+                    <textarea name="descricao-do-monstro-updt" id="descricao-do-monstro-updt" cols="60" rows="5"></textarea>
+                    
+                    <label for="elementos-do-monstro-updt">Elemento</label>
+                    <select name="elementos-do-monstro-updt" id="elementos-do-monstro-updt">
+                      <option value="fogo">Fogo</option>
+                      <option value="agua">Água</option>
+                      <option value="trovao">Trovão</option>
+                      <option value="gelo">Gelo</option>
+                      <option value="dragao">Dragão</option>
+                    </select>
+                    
+                    <label for="aflicoes-do-monstro-updt">Aflições que pode infligir</label>
+                    <select name="aflicoes-do-monstro-updt" id="aflicoes-do-monstro-updt">
+                      <option value="veneno">Veneno</option>
+                      <option value="paralisia">Paralisia</option>
+                      <option value="sono">Sono</option>
+                      <option value="blastblight">Blastblight</option>
+                      <option value="fireblight">Fireblight</option>
+                      <option value="waterblight">Waterblight</option>
+                      <option value="thunderblight">thunderblight</option>
+                      <option value="iceblight">Iceblight</option>
+                      <option value="dragonblight">Dragonblight</option>
+                      <option value="nocaute">Nocaute</option>
+                      <option value="sangramento">Sangramento</option>
+                    </select>
+        
+                    <label for="locais-do-monstro-updt">Habitat</label>
+                    <select name="locais-do-monstro-updt" id="locais-do-monstro-updt">
+                      <option value="ancientForest">Ancient Forest</option>
+                      <option value="wildspireWaste">WildspireWaste</option>
+                      <option value="coralHighlands">Coral Highlands</option>
+                      <option value="rottenVale">Rotten Vale</option>
+                      <option value="eldersRecess">Elder's Recess</option>
+                      <option value="everstream">Everstream</option>
+                      <option value="greatravine">Great Ravine</option>
+                    </select>
+                    
+                    
+                    <label for="partes-do-monstro-updt">Partes</label>
+                    <textarea name="partes-do-monstro-updt" id="partes-do-monstro-updt" cols="60" rows="20"></textarea>
+        
+                    <label for="resistencia-do-monstro-updt">Resistência a Aflições</label>
+                    <textarea name="resistencia-do-monstro-updt" id="resistencia-do-monstro-updt" cols="60" rows="20"></textarea>
+                    
+                    <label for="recompensa-lr-do-monstro-updt">Recompensas Low Rank</label>
+                    <textarea name="recompensa-lr-do-monstro-updt" id="recompensa-lr-do-monstro-updt" cols="60" rows="20"></textarea>
+        
+                    <label for="recompensa-hr-do-monstro-updt">Recompensas High Rank</label>
+                    <textarea name="recompensa-hr-do-monstro-updt" id="recompensa-hr-do-monstro-updt" cols="60" rows="20"></textarea>
+        
+                    <label for="partes-quebraveis-do-monstro-updt">Partes Quebráveis</label>
+                    <select name="partes-quebraveis-do-monstro-updt" id="partes-quebraveis-do-monstro-updt">
+                      <option value="cabeca">Cabeça</option>
+                      <option value="corpo">Corpo</option>
+                      <option value="bracos">Braços</option>
+                      <option value="pernas">Pernas</option>
+                      <option value="asas">asas</option>
+                      <option value="cauda">Cauda</option>
+                    </select>
+        
+                    <label for="icon-do-monstro-updt"></label>
+                    <input id="icon-do-monstro-updt" type="url">
+        
+                    <label for="img-do-monstro-updt"></label>
+                    <input id="img-do-monstro-updt" type="url">
+                    
+                    <button id="btn-update">Atualizar Monstro</button>
+                  </form>
+            </section>
+            <!--Apagar-->
+            <section>
+                <form id="apagarrmonstro">
+                    <h2>Deletar Monstro</h2>
+                    <label for="id-do-monstro-dlt">Número do monstro</label>
+                    <input type="number">
+                    <label id="name-do-monstro-dlt" for="name-do-monstro-dlt">Nome do monstro</label>
+                    <input type="text">
+                    <button id="btn-delete">Deletar Monstro</button>
+                  </form>
+            </section>
+        </main>
+
+        <footer>
+            <div>
+                <p>
+                  2023 Dezembro | Thiago Rodrigues Prearo Netto | SENAI - Maracanã |
+                  Curso Programador Front-End
+                </p>
+            </div>
+            <div class="social-media">
+                <a href="https://pt-br.facebook.com/" target="_blank" class="linkfooter">
+                    <i class="fa fa-facebook-official"></i>
+                    Facebook
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" class="linkfooter">
+                    <i class="fa fa-instagram"></i>
+                    Instagram
+                </a>
+                <a href="https://twitter.com/" target="_blank" class="linkfooter">
+                    <i class="fa fa-twitter"></i>
+                    Twitter
+                </a>
+                <a href="https://br.linkedin.com/" target="_blank" class="linkfooter">
+                    <i class="fa fa-linkedin"></i>
+                    Linkedin
+                </a>
+            </div>
+        </footer>
+
+    </div> 
+
+    <script type="module" src='./js/main.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
