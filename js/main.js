@@ -37,7 +37,7 @@ const generateElements = (monsters) => {
                 const monstroElement = document.createElement("div");
                 monstroElement.innerHTML = `
                     <div class="cartao">
-                        <img class="cartao-img" src="${monstro.icone}" alt="${monstro.name}">
+                        <img class="cartao-img" src="${monstro.icon}" alt="${monstro.name}">
                         <div class="cartao-conteudo">
                              <h5 class="cartao-nome">${monstro.name}</h5>
                         </div>
@@ -59,7 +59,7 @@ const generateElements = (monsters) => {
                 const monstroElement = document.createElement("div");
                 monstroElement.innerHTML = `
                     <div class="cartao">
-                        <img class="cartao-img" src="${monstro.icone}" alt="${monstro.name}">
+                        <img class="cartao-img" src="${monstro.icon}" alt="${monstro.name}">
                         <div class="cartao-conteudo">
                              <h5 class="cartao-nome">${monstro.name}</h5>
                         </div>
