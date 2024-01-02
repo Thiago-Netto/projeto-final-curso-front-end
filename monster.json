@@ -1,1078 +1,1078 @@
 {
-  "monstros":[
+  "monstros": [
     {
-      "id":1,
+      "id": 1,
       "name": "Anteka",
-      "monsterclass":"herbivore",
-      "type":"small",
+      "monsterclass": "herbivore",
+      "type": "small",
       "size": "285,56 cm",
-      "health":70,
-      "habitats":[
+      "health": 70,
+      "habitats": [
         {
-          "id":1,
-          "habitat":"Hoarfrost Reach"
+          "id": 1,
+          "habitat": "Hoarfrost Reach"
         },
         {
-          "id":2,
-          "habitat":"Guiding Lands"
+          "id": 2,
+          "habitat": "Guiding Lands"
         }
       ],
-      "generation":"second",
-      "introduction":"Iceborne Expansion",
-      "description":"Herbivores of the tundra that are slightly more aggressive than Kelbi, using their horns to fend off any attacker.",
-      "elements":null,
-      "ailments":null,
-      "bodyparts":[
+      "generation": "second",
+      "introduction": "Iceborne Expansion",
+      "description": "Herbivores of the tundra that are slightly more aggressive than Kelbi, using their horns to fend off any attacker.",
+      "elements": null,
+      "ailments": null,
+      "bodyparts": [
         {
-          "id":1,
-          "bodypart":"head",
-          "damages":[
+          "id": 1,
+          "bodypart": "head",
+          "damages": [
             {
-              "id":1,
-              "damage":"sever",
-              "value":85
+              "id": 1,
+              "damage": "sever",
+              "value": 85
             },
             {
-              "id":2,
-              "damage":"blunt",
-              "value":85
+              "id": 2,
+              "damage": "blunt",
+              "value": 85
             },
             {
-              "id":3,
-              "damage":"ranged",
-              "value":80
+              "id": 3,
+              "damage": "ranged",
+              "value": 80
             },
             {
-              "id":4,
-              "damage":"fire",
-              "value":80
+              "id": 4,
+              "damage": "fire",
+              "value": 80
             },
             {
-              "id":5,
-              "damage":"water",
-              "value":80
+              "id": 5,
+              "damage": "water",
+              "value": 80
             },
             {
-              "id":6,
-              "damage":"thunder",
-              "value":80
+              "id": 6,
+              "damage": "thunder",
+              "value": 80
             },
             {
-              "id":7,
-              "damage":"ice",
-              "value":80
+              "id": 7,
+              "damage": "ice",
+              "value": 80
             },
             {
-              "id":8,
-              "damage":"dragon",
-              "value":0
+              "id": 8,
+              "damage": "dragon",
+              "value": 0
             },
             {
-              "id":9,
-              "damage":"stun",
-              "value":100
+              "id": 9,
+              "damage": "stun",
+              "value": 100
             },
             {
-              "id":10,
-              "damage":"stamina",
-              "value":100
+              "id": 10,
+              "damage": "stamina",
+              "value": 100
             }
           ]
         },
         {
-          "id":1,
-          "bodypart":"body",
-          "damages":[
+          "id": 1,
+          "bodypart": "body",
+          "damages": [
             {
-              "id":1,
-              "damage":"sever",
-              "value":85
+              "id": 1,
+              "damage": "sever",
+              "value": 85
             },
             {
-              "id":2,
-              "damage":"blunt",
-              "value":85
+              "id": 2,
+              "damage": "blunt",
+              "value": 85
             },
             {
-              "id":3,
-              "damage":"ranged",
-              "value":80
+              "id": 3,
+              "damage": "ranged",
+              "value": 80
             },
             {
-              "id":4,
-              "damage":"fire",
-              "value":80
+              "id": 4,
+              "damage": "fire",
+              "value": 80
             },
             {
-              "id":5,
-              "damage":"water",
-              "value":80
+              "id": 5,
+              "damage": "water",
+              "value": 80
             },
             {
-              "id":6,
-              "damage":"thunder",
-              "value":80
+              "id": 6,
+              "damage": "thunder",
+              "value": 80
             },
             {
-              "id":7,
-              "damage":"ice",
-              "value":80
+              "id": 7,
+              "damage": "ice",
+              "value": 80
             },
             {
-              "id":8,
-              "damage":"dragon",
-              "value":0
+              "id": 8,
+              "damage": "dragon",
+              "value": 0
             },
             {
-              "id":9,
-              "damage":"stun",
-              "value":100
+              "id": 9,
+              "damage": "stun",
+              "value": 100
             },
             {
-              "id":10,
-              "damage":"stamina",
-              "value":100
+              "id": 10,
+              "damage": "stamina",
+              "value": 100
             }
           ]
         }
       ],
-      "breakableparts":[
+      "breakableparts": [
         {
-          "id":1,
-          "breakble":"head",
-          "extract":"green"
+          "id": 1,
+          "breakble": "head",
+          "extract": "green"
         },
         {
-          "id":2,
-          "breakble":"body",
-          "extract":"green"
+          "id": 2,
+          "breakble": "body",
+          "extract": "green"
         }
       ],
-      "ailmentresistances":[
+      "ailmentresistances": [
         {
-          "id":1,
-          "ailmentresistance":"mount",
-          "initialresistance":null,
-          "ailmentdecay":null,
-          "ailmentdamage":null,
-          "ailmentduration":null
+          "id": 1,
+          "ailmentresistance": "mount",
+          "initialresistance": null,
+          "ailmentdecay": null,
+          "ailmentdamage": null,
+          "ailmentduration": null
         },
         {
-          "id":2,
-          "ailmentresistance":"stun",
-          "initialresistance":95,
-          "ailmentdecay":"-5 / 10 seconds",
-          "ailmentdamage":null,
-          "ailmentduration":"5 seconds"
+          "id": 2,
+          "ailmentresistance": "stun",
+          "initialresistance": 95,
+          "ailmentdecay": "-5 / 10 seconds",
+          "ailmentdamage": null,
+          "ailmentduration": "5 seconds"
         },
         {
-          "id":3,
-          "ailmentresistance":"blast",
-          "initialresistance":50,
-          "ailmentdecay":null,
-          "ailmentdamage":100,
-          "ailmentduration":null
+          "id": 3,
+          "ailmentresistance": "blast",
+          "initialresistance": 50,
+          "ailmentdecay": null,
+          "ailmentdamage": 100,
+          "ailmentduration": null
         },
         {
-          "id":4,
-          "ailmentresistance":"sleep",
-          "initialresistance":70,
-          "ailmentdecay":"-5 / 10 seconds",
-          "ailmentdamage":null,
-          "ailmentduration":"40 seconds"
+          "id": 4,
+          "ailmentresistance": "sleep",
+          "initialresistance": 70,
+          "ailmentdecay": "-5 / 10 seconds",
+          "ailmentdamage": null,
+          "ailmentduration": "40 seconds"
         },
         {
-          "id":5,
-          "ailmentresistance":"poison",
-          "initialresistance":100,
-          "ailmentdecay":"-5 / 10 seconds",
-          "ailmentdamage":700,
-          "ailmentduration":"35 seconds"
+          "id": 5,
+          "ailmentresistance": "poison",
+          "initialresistance": 100,
+          "ailmentdecay": "-5 / 10 seconds",
+          "ailmentdamage": 700,
+          "ailmentduration": "35 seconds"
         },
         {
-          "id":5,
-          "ailmentresistance":"paralysis",
-          "initialresistance":40,
-          "ailmentdecay":"-5 / 10 seconds",
-          "ailmentdamage":null,
-          "ailmentduration":"15 seconds"
+          "id": 5,
+          "ailmentresistance": "paralysis",
+          "initialresistance": 40,
+          "ailmentdecay": "-5 / 10 seconds",
+          "ailmentdamage": null,
+          "ailmentduration": "15 seconds"
         }
       ],
-      "Rage":[
+      "Rage": [
         {
-          "id":1,
-          "enragethreshold":"0 damage",
-          "enrageduration":"0 seconds",
-          "enrageattackmod":"x1.0",
-          "enragedefensemod":"x1.0",
-          "enragespeedmod":"x1.0",
-          "exhaustspeed":"x1.0",
-          "exhaustduration":"Low Rank 120 seconds, High Rank 120 seconds and Master Rank 120 seconds"
+          "id": 1,
+          "enragethreshold": "0 damage",
+          "enrageduration": "0 seconds",
+          "enrageattackmod": "x1.0",
+          "enragedefensemod": "x1.0",
+          "enragespeedmod": "x1.0",
+          "exhaustspeed": "x1.0",
+          "exhaustduration": "Low Rank 120 seconds, High Rank 120 seconds and Master Rank 120 seconds"
         }
       ],
-      "availableat":"Master Rank",
-      "invader":"no",
-      "lowrankrewards":null,
-      "highrankrewards":null,
-      "masterrankrewards":[
+      "availableat": "Master Rank",
+      "invader": "no",
+      "lowrankrewards": null,
+      "highrankrewards": null,
+      "masterrankrewards": [
         {
-          "id":1,
-          "masterrankreward":"Anteka Antler",
-          "masterankrewardmethods":[
+          "id": 1,
+          "masterrankreward": "Anteka Antler",
+          "masterankrewardmethods": [
             {
-              "id":1,
-              "masterankrewardmethod":"carve",
-              "masterrankrewardchance":"70%"
+              "id": 1,
+              "masterankrewardmethod": "carve",
+              "masterrankrewardchance": "70%"
             }
           ]
         },
         {
-          "id":2,
-          "masterrankreward":"Prized Pelt",
-          "masterankrewardmethods":[
+          "id": 2,
+          "masterrankreward": "Prized Pelt",
+          "masterankrewardmethods": [
             {
-              "id":1,
-              "masterankrewardmethod":"carve",
-              "masterrankrewardchance":"30%"
+              "id": 1,
+              "masterankrewardmethod": "carve",
+              "masterrankrewardchance": "30%"
             }
           ]
         }
       ],
-      "icon":"https://cdn.kiranico.net/file/kiranico/mhworld-web/mhw/icon/ems016_ID.png",
-      "image":"https://static.wikia.nocookie.net/monsterhunter/images/1/1e/MHRise-Anteka_Render_001.png/revision/latest/scale-to-width-down/700?cb=20220413043449"
+      "icon": "https://cdn.kiranico.net/file/kiranico/mhworld-web/mhw/icon/ems016_ID.png",
+      "image": "https://static.wikia.nocookie.net/monsterhunter/images/1/1e/MHRise-Anteka_Render_001.png/revision/latest/scale-to-width-down/700?cb=20220413043449"
     },
     {
-      "id":2,
+      "id": 2,
       "name": "Apceros",
-      "monsterclass":"herbivore",
-      "type":"small",
+      "monsterclass": "herbivore",
+      "type": "small",
       "size": "988,42 cm",
-      "health":100,
-      "habitats":[
+      "health": 100,
+      "habitats": [
         {
-          "id":1,
-          "habitat":"Wildspire Waste"
+          "id": 1,
+          "habitat": "Wildspire Waste"
         },
         {
-          "id":2,
-          "habitat":"Guiding Lands"
+          "id": 2,
+          "habitat": "Guiding Lands"
         }
       ],
-      "generation":"first",
-      "introduction":"Monster Hunter World Base Game",
-      "description":"Herbivores that inhabits the Wildspire Waste. They've developed particularly hard hide to ward off attackers, and are known to gather in groups to defend themselves.",
-      "elements":null,
-      "ailments":null,
-      "bodyparts":[
+      "generation": "first",
+      "introduction": "Monster Hunter World Base Game",
+      "description": "Herbivores that inhabits the Wildspire Waste. They've developed particularly hard hide to ward off attackers, and are known to gather in groups to defend themselves.",
+      "elements": null,
+      "ailments": null,
+      "bodyparts": [
         {
-          "id":1,
-          "bodypart":"head",
-          "damages":[
+          "id": 1,
+          "bodypart": "head",
+          "damages": [
             {
-              "id":1,
-              "damage":"sever",
-              "value":60
+              "id": 1,
+              "damage": "sever",
+              "value": 60
             },
             {
-              "id":2,
-              "damage":"blunt",
-              "value":60
+              "id": 2,
+              "damage": "blunt",
+              "value": 60
             },
             {
-              "id":3,
-              "damage":"ranged",
-              "value":60
+              "id": 3,
+              "damage": "ranged",
+              "value": 60
             },
             {
-              "id":4,
-              "damage":"fire",
-              "value":40
+              "id": 4,
+              "damage": "fire",
+              "value": 40
             },
             {
-              "id":5,
-              "damage":"water",
-              "value":25
+              "id": 5,
+              "damage": "water",
+              "value": 25
             },
             {
-              "id":6,
-              "damage":"thunder",
-              "value":40
+              "id": 6,
+              "damage": "thunder",
+              "value": 40
             },
             {
-              "id":7,
-              "damage":"ice",
-              "value":25
+              "id": 7,
+              "damage": "ice",
+              "value": 25
             },
             {
-              "id":8,
-              "damage":"dragon",
-              "value":10
+              "id": 8,
+              "damage": "dragon",
+              "value": 10
             },
             {
-              "id":9,
-              "damage":"stun",
-              "value":100
+              "id": 9,
+              "damage": "stun",
+              "value": 100
             },
             {
-              "id":10,
-              "damage":"stamina",
-              "value":100
+              "id": 10,
+              "damage": "stamina",
+              "value": 100
             }
           ]
         },
         {
-          "id":1,
-          "bodypart":"body",
-          "damages":[
+          "id": 1,
+          "bodypart": "body",
+          "damages": [
             {
-              "id":1,
-              "damage":"sever",
-              "value":60
+              "id": 1,
+              "damage": "sever",
+              "value": 60
             },
             {
-              "id":2,
-              "damage":"blunt",
-              "value":60
+              "id": 2,
+              "damage": "blunt",
+              "value": 60
             },
             {
-              "id":3,
-              "damage":"ranged",
-              "value":60
+              "id": 3,
+              "damage": "ranged",
+              "value": 60
             },
             {
-              "id":4,
-              "damage":"fire",
-              "value":40
+              "id": 4,
+              "damage": "fire",
+              "value": 40
             },
             {
-              "id":5,
-              "damage":"water",
-              "value":25
+              "id": 5,
+              "damage": "water",
+              "value": 25
             },
             {
-              "id":6,
-              "damage":"thunder",
-              "value":40
+              "id": 6,
+              "damage": "thunder",
+              "value": 40
             },
             {
-              "id":7,
-              "damage":"ice",
-              "value":25
+              "id": 7,
+              "damage": "ice",
+              "value": 25
             },
             {
-              "id":8,
-              "damage":"dragon",
-              "value":10
+              "id": 8,
+              "damage": "dragon",
+              "value": 10
             },
             {
-              "id":9,
-              "damage":"stun",
-              "value":0
+              "id": 9,
+              "damage": "stun",
+              "value": 0
             },
             {
-              "id":10,
-              "damage":"stamina",
-              "value":100
+              "id": 10,
+              "damage": "stamina",
+              "value": 100
             }
           ]
         }
       ],
-      "breakableparts":[
+      "breakableparts": [
         {
-          "id":1,
-          "breakble":"body",
-          "extract":"green"
+          "id": 1,
+          "breakble": "body",
+          "extract": "green"
         }
       ],
-      "ailmentresistances":[
+      "ailmentresistances": [
         {
-          "id":1,
-          "ailmentresistance":"mount",
-          "initialresistance":null,
-          "ailmentdecay":null,
-          "ailmentdamage":null,
-          "ailmentduration":null
+          "id": 1,
+          "ailmentresistance": "mount",
+          "initialresistance": null,
+          "ailmentdecay": null,
+          "ailmentdamage": null,
+          "ailmentduration": null
         },
         {
-          "id":2,
-          "ailmentresistance":"stun",
-          "initialresistance":95,
-          "ailmentdecay":"-5 / 10 seconds",
-          "ailmentdamage":null,
-          "ailmentduration":"7 seconds"
+          "id": 2,
+          "ailmentresistance": "stun",
+          "initialresistance": 95,
+          "ailmentdecay": "-5 / 10 seconds",
+          "ailmentdamage": null,
+          "ailmentduration": "7 seconds"
         },
         {
-          "id":3,
-          "ailmentresistance":"blast",
-          "initialresistance":50,
-          "ailmentdecay":null,
-          "ailmentdamage":100,
-          "ailmentduration":null
+          "id": 3,
+          "ailmentresistance": "blast",
+          "initialresistance": 50,
+          "ailmentdecay": null,
+          "ailmentdamage": 100,
+          "ailmentduration": null
         },
         {
-          "id":4,
-          "ailmentresistance":"sleep",
-          "initialresistance":70,
-          "ailmentdecay":"-5 / 10 seconds",
-          "ailmentdamage":null,
-          "ailmentduration":"40 seconds"
+          "id": 4,
+          "ailmentresistance": "sleep",
+          "initialresistance": 70,
+          "ailmentdecay": "-5 / 10 seconds",
+          "ailmentdamage": null,
+          "ailmentduration": "40 seconds"
         },
         {
-          "id":5,
-          "ailmentresistance":"poison",
-          "initialresistance":100,
-          "ailmentdecay":"-5 / 10 seconds",
-          "ailmentdamage":700,
-          "ailmentduration":"35 seconds"
+          "id": 5,
+          "ailmentresistance": "poison",
+          "initialresistance": 100,
+          "ailmentdecay": "-5 / 10 seconds",
+          "ailmentdamage": 700,
+          "ailmentduration": "35 seconds"
         },
         {
-          "id":5,
-          "ailmentresistance":"paralysis",
-          "initialresistance":40,
-          "ailmentdecay":"-5 / 10 seconds",
-          "ailmentdamage":null,
-          "ailmentduration":"15 seconds"
+          "id": 5,
+          "ailmentresistance": "paralysis",
+          "initialresistance": 40,
+          "ailmentdecay": "-5 / 10 seconds",
+          "ailmentdamage": null,
+          "ailmentduration": "15 seconds"
         }
       ],
-      "Rage":[
+      "Rage": [
         {
-          "id":1,
-          "enragethreshold":"0 damage",
-          "enrageduration":"0 seconds",
-          "enrageattackmod":"0",
-          "enragedefensemod":"0",
-          "enragespeedmod":"0",
-          "exhaustspeed":"x1.0",
-          "exhaustduration":"Low Rank 120 seconds, High Rank 120 seconds and Master Rank 120 seconds"
+          "id": 1,
+          "enragethreshold": "0 damage",
+          "enrageduration": "0 seconds",
+          "enrageattackmod": "0",
+          "enragedefensemod": "0",
+          "enragespeedmod": "0",
+          "exhaustspeed": "x1.0",
+          "exhaustduration": "Low Rank 120 seconds, High Rank 120 seconds and Master Rank 120 seconds"
         }
       ],
-      "availableat":"Low Rank and beyond",
-      "invader":"no",
-      "lowrankrewards":[
+      "availableat": "Low Rank and beyond",
+      "invader": "no",
+      "lowrankrewards": [
         {
-          "id":1,
-          "lowrankreward":"Raw Meat",
-          "lowrankrewardmethods":[
+          "id": 1,
+          "lowrankreward": "Raw Meat",
+          "lowrankrewardmethods": [
             {
-              "id":1,
-              "lowrankrewardmethod":"carve",
-              "lowrankrewardchance":"100%"
+              "id": 1,
+              "lowrankrewardmethod": "carve",
+              "lowrankrewardchance": "100%"
             }
           ]
         }
       ],
-      "highrankrewards":[
+      "highrankrewards": [
         {
-          "id":1,
-          "highrankreward":"Raw Meat",
-          "highrankrewardmethods":[
+          "id": 1,
+          "highrankreward": "Raw Meat",
+          "highrankrewardmethods": [
             {
-              "id":1,
-              "highrankrewardmethod":"carve",
-              "highrankrewardchance":"100%"
+              "id": 1,
+              "highrankrewardmethod": "carve",
+              "highrankrewardchance": "100%"
             }
           ]
         }
       ],
-      "masterrankrewards":[
+      "masterrankrewards": [
         {
-          "id":1,
-          "masterrankreward":"Raw Meat",
-          "masterankrewardmethods":[
+          "id": 1,
+          "masterrankreward": "Raw Meat",
+          "masterankrewardmethods": [
             {
-              "id":1,
-              "masterankrewardmethod":"carve",
-              "masterrankrewardchance":"100%"
+              "id": 1,
+              "masterankrewardmethod": "carve",
+              "masterrankrewardchance": "100%"
             }
           ]
         }
       ],
-      "icon":"https://cdn.kiranico.net/file/kiranico/mhworld-web/mhw/icon/ems002_ID.png",
-      "image":"https://static.wikia.nocookie.net/monsterhunter/images/d/d5/MHW-Apceros_Render_001.png/revision/latest/scale-to-width-down/700?cb=20180209034455"
+      "icon": "https://cdn.kiranico.net/file/kiranico/mhworld-web/mhw/icon/ems002_ID.png",
+      "image": "https://static.wikia.nocookie.net/monsterhunter/images/d/d5/MHW-Apceros_Render_001.png/revision/latest/scale-to-width-down/700?cb=20180209034455"
     },
     {
-      "id":3,
+      "id": 3,
       "name": "Alatreon",
-      "monsterclass":"elder dragon",
-      "type":"large",
+      "monsterclass": "elder dragon",
+      "type": "large",
       "size": "2672,67 cm to 3652,64 cm",
-      "health":52500,
-      "habitats":[
+      "health": 52500,
+      "habitats": [
         {
-          "id":1,
-          "habitat":"Secluded Valley"
+          "id": 1,
+          "habitat": "Secluded Valley"
         }
       ],
-      "generation":"third",
-      "introduction":"Iceborne expanssion version 14.00 - July, 9 2020",
-      "description":"Known as a symbol of destruction, people fear even uttering its name. It's rumored to control all of the elements, but most, if not all, records of its existence have been burned.",
-      "elements":[
+      "generation": "third",
+      "introduction": "Iceborne expanssion version 14.00 - July, 9 2020",
+      "description": "Known as a symbol of destruction, people fear even uttering its name. It's rumored to control all of the elements, but most, if not all, records of its existence have been burned.",
+      "elements": [
         {
-          "id":1,
-          "element":"Fire"
+          "id": 1,
+          "element": "Fire"
         },
         {
-          "id":2,
-          "element":"Water"
+          "id": 2,
+          "element": "Water"
         },
         {
-          "id":3,
-          "element":"Thunder"
+          "id": 3,
+          "element": "Thunder"
         },
         {
-          "id":4,
-          "element":"Ice"
+          "id": 4,
+          "element": "Ice"
         },
         {
-          "id":5,
-          "element":"Dragon"
+          "id": 5,
+          "element": "Dragon"
         }
       ],
-      "ailments":[
+      "ailments": [
         {
-          "id":1,
-          "ailment":"Dragonblight"
+          "id": 1,
+          "ailment": "Dragonblight"
         },
         {
-          "id":2,
-          "ailment":"Fireblight"
+          "id": 2,
+          "ailment": "Fireblight"
         },
         {
-          "id":3,
-          "ailment":"Waterblight"
+          "id": 3,
+          "ailment": "Waterblight"
         },
         {
-          "id":4,
-          "ailment":"Thunderblight"
+          "id": 4,
+          "ailment": "Thunderblight"
         },
         {
-          "id":5,
-          "ailment":"Iceblight"
+          "id": 5,
+          "ailment": "Iceblight"
         }
       ],
-      "bodyparts":[
+      "bodyparts": [
         {
-          "id":1,
-          "bodypart":"head",
-          "damages":[
+          "id": 1,
+          "bodypart": "head",
+          "damages": [
             {
-              "id":1,
-              "damage":"sever",
-              "value":"85 (fire mode), 85 (ice mode), 85 (dragon mode), 85 (no element)"
+              "id": 1,
+              "damage": "sever",
+              "value": "85 (fire mode), 85 (ice mode), 85 (dragon mode), 85 (no element)"
             },
             {
-              "id":2,
-              "damage":"blunt",
-              "value":"85 (fire mode), 85 (ice mode), 85 (dragon mode), 85 (no element)"
+              "id": 2,
+              "damage": "blunt",
+              "value": "85 (fire mode), 85 (ice mode), 85 (dragon mode), 85 (no element)"
             },
             {
-              "id":3,
-              "damage":"ranged",
-              "value":"30 (fire mode), 30 (ice mode), 30 (dragon mode), 30 (no element)"
+              "id": 3,
+              "damage": "ranged",
+              "value": "30 (fire mode), 30 (ice mode), 30 (dragon mode), 30 (no element)"
             },
             {
-              "id":4,
-              "damage":"fire",
-              "value":"0 (fire mode), 14 (ice mode), 6 (dragon mode), 13 (no element)"
+              "id": 4,
+              "damage": "fire",
+              "value": "0 (fire mode), 14 (ice mode), 6 (dragon mode), 13 (no element)"
             },
             {
-              "id":5,
-              "damage":"water",
-              "value":"10 (fire mode), 3 (ice mode), 5 (dragon mode), 10 (no element)"
+              "id": 5,
+              "damage": "water",
+              "value": "10 (fire mode), 3 (ice mode), 5 (dragon mode), 10 (no element)"
             },
             {
-              "id":6,
-              "damage":"thunder",
-              "value":"3 (fire mode), 10 (ice mode), 5 (dragon mode), 10 (no element)"
+              "id": 6,
+              "damage": "thunder",
+              "value": "3 (fire mode), 10 (ice mode), 5 (dragon mode), 10 (no element)"
             },
             {
-              "id":7,
-              "damage":"ice",
-              "value":"14 (fire mode), 0 (ice mode), 6 (dragon mode), 13 (no element)"
+              "id": 7,
+              "damage": "ice",
+              "value": "14 (fire mode), 0 (ice mode), 6 (dragon mode), 13 (no element)"
             },
             {
-              "id":8,
-              "damage":"dragon",
-              "value":"1 (fire mode), 1 (ice mode), 9 (dragon mode), 13 (no element)"
+              "id": 8,
+              "damage": "dragon",
+              "value": "1 (fire mode), 1 (ice mode), 9 (dragon mode), 13 (no element)"
             },
             {
-              "id":9,
-              "damage":"stun",
-              "value":100
+              "id": 9,
+              "damage": "stun",
+              "value": 100
             },
             {
-              "id":10,
-              "damage":"stamina",
-              "value":100
+              "id": 10,
+              "damage": "stamina",
+              "value": 100
             }
           ]
         },
         {
-          "id":1,
-          "bodypart":"body",
-          "damages":[
+          "id": 1,
+          "bodypart": "body",
+          "damages": [
             {
-              "id":1,
-              "damage":"sever",
-              "value":"20 (fire mode), 20 (ice mode), 20 (dragon mode), 20 (no element)"
+              "id": 1,
+              "damage": "sever",
+              "value": "20 (fire mode), 20 (ice mode), 20 (dragon mode), 20 (no element)"
             },
             {
-              "id":2,
-              "damage":"blunt",
-              "value":"25 (fire mode), 25 (ice mode), 25 (dragon mode), 25 (no element)"
+              "id": 2,
+              "damage": "blunt",
+              "value": "25 (fire mode), 25 (ice mode), 25 (dragon mode), 25 (no element)"
             },
             {
-              "id":3,
-              "damage":"ranged",
-              "value":"45 (fire mode), 45 (ice mode), 45 (dragon mode), 45 (no element)"
+              "id": 3,
+              "damage": "ranged",
+              "value": "45 (fire mode), 45 (ice mode), 45 (dragon mode), 45 (no element)"
             },
             {
-              "id":4,
-              "damage":"fire",
-              "value":"0 (fire mode), 7 (ice mode), 3 (dragon mode), 7 (no element)"
+              "id": 4,
+              "damage": "fire",
+              "value": "0 (fire mode), 7 (ice mode), 3 (dragon mode), 7 (no element)"
             },
             {
-              "id":5,
-              "damage":"water",
-              "value":"10 (fire mode), 3 (ice mode), 5 (dragon mode), 10 (no element)"
+              "id": 5,
+              "damage": "water",
+              "value": "10 (fire mode), 3 (ice mode), 5 (dragon mode), 10 (no element)"
             },
             {
-              "id":6,
-              "damage":"thunder",
-              "value":"3 (fire mode), 10 (ice mode), 5 (dragon mode), 10 (no element)"
+              "id": 6,
+              "damage": "thunder",
+              "value": "3 (fire mode), 10 (ice mode), 5 (dragon mode), 10 (no element)"
             },
             {
-              "id":7,
-              "damage":"ice",
-              "value":"14 (fire mode), 0 (ice mode), 6 (dragon mode), 13 (no element)"
+              "id": 7,
+              "damage": "ice",
+              "value": "14 (fire mode), 0 (ice mode), 6 (dragon mode), 13 (no element)"
             },
             {
-              "id":8,
-              "damage":"dragon",
-              "value":"1 (fire mode), 1 (ice mode), 9 (dragon mode), 13 (no element)"
+              "id": 8,
+              "damage": "dragon",
+              "value": "1 (fire mode), 1 (ice mode), 9 (dragon mode), 13 (no element)"
             },
             {
-              "id":9,
-              "damage":"stun",
-              "value":0
+              "id": 9,
+              "damage": "stun",
+              "value": 0
             },
             {
-              "id":10,
-              "damage":"stamina",
-              "value":100
+              "id": 10,
+              "damage": "stamina",
+              "value": 100
             }
           ]
         },
         {
-          "id":1,
-          "bodypart":"wings",
-          "damages":[
+          "id": 1,
+          "bodypart": "wings",
+          "damages": [
             {
-              "id":1,
-              "damage":"sever",
-              "value":"35 (fire mode), 35 (ice mode), 35 (dragon mode), 35 (no element)"
+              "id": 1,
+              "damage": "sever",
+              "value": "35 (fire mode), 35 (ice mode), 35 (dragon mode), 35 (no element)"
             },
             {
-              "id":2,
-              "damage":"blunt",
-              "value":"35 (fire mode), 35 (ice mode), 35 (dragon mode), 35 (no element)"
+              "id": 2,
+              "damage": "blunt",
+              "value": "35 (fire mode), 35 (ice mode), 35 (dragon mode), 35 (no element)"
             },
             {
-              "id":3,
-              "damage":"ranged",
-              "value":"25 (fire mode), 25 (ice mode), 25 (dragon mode), 25 (no element)"
+              "id": 3,
+              "damage": "ranged",
+              "value": "25 (fire mode), 25 (ice mode), 25 (dragon mode), 25 (no element)"
             },
             {
-              "id":4,
-              "damage":"fire",
-              "value":"0 (fire mode), 18 (ice mode), 8 (dragon mode), 17 (no element)"
+              "id": 4,
+              "damage": "fire",
+              "value": "0 (fire mode), 18 (ice mode), 8 (dragon mode), 17 (no element)"
             },
             {
-              "id":5,
-              "damage":"water",
-              "value":"13 (fire mode), 4 (ice mode), 6 (dragon mode), 13 (no element)"
+              "id": 5,
+              "damage": "water",
+              "value": "13 (fire mode), 4 (ice mode), 6 (dragon mode), 13 (no element)"
             },
             {
-              "id":6,
-              "damage":"thunder",
-              "value":"4 (fire mode), 13 (ice mode), 6 (dragon mode), 13 (no element)"
+              "id": 6,
+              "damage": "thunder",
+              "value": "4 (fire mode), 13 (ice mode), 6 (dragon mode), 13 (no element)"
             },
             {
-              "id":7,
-              "damage":"ice",
-              "value":"18 (fire mode), 0 (ice mode), 8 (dragon mode), 17 (no element)"
+              "id": 7,
+              "damage": "ice",
+              "value": "18 (fire mode), 0 (ice mode), 8 (dragon mode), 17 (no element)"
             },
             {
-              "id":8,
-              "damage":"dragon",
-              "value":"1 (fire mode), 1 (ice mode), 11 (dragon mode), 17 (no element)"
+              "id": 8,
+              "damage": "dragon",
+              "value": "1 (fire mode), 1 (ice mode), 11 (dragon mode), 17 (no element)"
             },
             {
-              "id":9,
-              "damage":"stun",
-              "value":0
+              "id": 9,
+              "damage": "stun",
+              "value": 0
             },
             {
-              "id":10,
-              "damage":"stamina",
-              "value":100
+              "id": 10,
+              "damage": "stamina",
+              "value": 100
             }
           ]
         },
         {
-          "id":1,
-          "bodypart":"arms",
-          "damages":[
+          "id": 1,
+          "bodypart": "arms",
+          "damages": [
             {
-              "id":1,
-              "damage":"sever",
-              "value":"60 (fire mode), 60 (ice mode), 60 (dragon mode), 60 (no element)"
+              "id": 1,
+              "damage": "sever",
+              "value": "60 (fire mode), 60 (ice mode), 60 (dragon mode), 60 (no element)"
             },
             {
-              "id":2,
-              "damage":"blunt",
-              "value":"60 (fire mode), 60 (ice mode), 60 (dragon mode), 60 (no element)"
+              "id": 2,
+              "damage": "blunt",
+              "value": "60 (fire mode), 60 (ice mode), 60 (dragon mode), 60 (no element)"
             },
             {
-              "id":3,
-              "damage":"ranged",
-              "value":"20 (fire mode), 20 (ice mode), 20 (dragon mode), 20 (no element)"
+              "id": 3,
+              "damage": "ranged",
+              "value": "20 (fire mode), 20 (ice mode), 20 (dragon mode), 20 (no element)"
             },
             {
-              "id":4,
-              "damage":"fire",
-              "value":"0 (fire mode), 22 (ice mode), 10 (dragon mode), 20 (no element)"
+              "id": 4,
+              "damage": "fire",
+              "value": "0 (fire mode), 22 (ice mode), 10 (dragon mode), 20 (no element)"
             },
             {
-              "id":5,
-              "damage":"water",
-              "value":"16 (fire mode), 5 (ice mode), 8 (dragon mode), 16 (no element)"
+              "id": 5,
+              "damage": "water",
+              "value": "16 (fire mode), 5 (ice mode), 8 (dragon mode), 16 (no element)"
             },
             {
-              "id":6,
-              "damage":"thunder",
-              "value":"5 (fire mode), 16 (ice mode), 8 (dragon mode), 16 (no element)"
+              "id": 6,
+              "damage": "thunder",
+              "value": "5 (fire mode), 16 (ice mode), 8 (dragon mode), 16 (no element)"
             },
             {
-              "id":7,
-              "damage":"ice",
-              "value":"22 (fire mode), 0 (ice mode), 10 (dragon mode), 20 (no element)"
+              "id": 7,
+              "damage": "ice",
+              "value": "22 (fire mode), 0 (ice mode), 10 (dragon mode), 20 (no element)"
             },
             {
-              "id":8,
-              "damage":"dragon",
-              "value":"2 (fire mode), 2 (ice mode), 14 (dragon mode), 20 (no element)"
+              "id": 8,
+              "damage": "dragon",
+              "value": "2 (fire mode), 2 (ice mode), 14 (dragon mode), 20 (no element)"
             },
             {
-              "id":9,
-              "damage":"stun",
-              "value":0
+              "id": 9,
+              "damage": "stun",
+              "value": 0
             },
             {
-              "id":10,
-              "damage":"stamina",
-              "value":100
+              "id": 10,
+              "damage": "stamina",
+              "value": 100
             }
           ]
         },
         {
-          "id":1,
-          "bodypart":"legs",
-          "damages":[
+          "id": 1,
+          "bodypart": "legs",
+          "damages": [
             {
-              "id":1,
-              "damage":"sever",
-              "value":"40 (fire mode), 40 (ice mode), 40 (dragon mode), 40 (no element)"
+              "id": 1,
+              "damage": "sever",
+              "value": "40 (fire mode), 40 (ice mode), 40 (dragon mode), 40 (no element)"
             },
             {
-              "id":2,
-              "damage":"blunt",
-              "value":"40 (fire mode), 40 (ice mode), 40 (dragon mode), 40 (no element)"
+              "id": 2,
+              "damage": "blunt",
+              "value": "40 (fire mode), 40 (ice mode), 40 (dragon mode), 40 (no element)"
             },
             {
-              "id":3,
-              "damage":"ranged",
-              "value":"25 (fire mode), 25 (ice mode), 25 (dragon mode), 25 (no element)"
+              "id": 3,
+              "damage": "ranged",
+              "value": "25 (fire mode), 25 (ice mode), 25 (dragon mode), 25 (no element)"
             },
             {
-              "id":4,
-              "damage":"fire",
-              "value":"0 (fire mode), 18 (ice mode), 8 (dragon mode), 17 (no element)"
+              "id": 4,
+              "damage": "fire",
+              "value": "0 (fire mode), 18 (ice mode), 8 (dragon mode), 17 (no element)"
             },
             {
-              "id":5,
-              "damage":"water",
-              "value":"13 (fire mode), 4 (ice mode), 6 (dragon mode), 13 (no element)"
+              "id": 5,
+              "damage": "water",
+              "value": "13 (fire mode), 4 (ice mode), 6 (dragon mode), 13 (no element)"
             },
             {
-              "id":6,
-              "damage":"thunder",
-              "value":"4 (fire mode), 13 (ice mode), 6 (dragon mode), 13 (no element)"
+              "id": 6,
+              "damage": "thunder",
+              "value": "4 (fire mode), 13 (ice mode), 6 (dragon mode), 13 (no element)"
             },
             {
-              "id":7,
-              "damage":"ice",
-              "value":"18 (fire mode), 0 (ice mode), 8 (dragon mode), 17 (no element)"
+              "id": 7,
+              "damage": "ice",
+              "value": "18 (fire mode), 0 (ice mode), 8 (dragon mode), 17 (no element)"
             },
             {
-              "id":8,
-              "damage":"dragon",
-              "value":"1 (fire mode), 1 (ice mode), 11 (dragon mode), 17 (no element)"
+              "id": 8,
+              "damage": "dragon",
+              "value": "1 (fire mode), 1 (ice mode), 11 (dragon mode), 17 (no element)"
             },
             {
-              "id":9,
-              "damage":"stun",
-              "value":0
+              "id": 9,
+              "damage": "stun",
+              "value": 0
             },
             {
-              "id":10,
-              "damage":"stamina",
-              "value":100
+              "id": 10,
+              "damage": "stamina",
+              "value": 100
             }
           ]
         },
         {
-          "id":1,
-          "bodypart":"tail",
-          "damages":[
+          "id": 1,
+          "bodypart": "tail",
+          "damages": [
             {
-              "id":1,
-              "damage":"sever",
-              "value":"40 (fire mode), 40 (ice mode), 40 (dragon mode), 40 (no element)"
+              "id": 1,
+              "damage": "sever",
+              "value": "40 (fire mode), 40 (ice mode), 40 (dragon mode), 40 (no element)"
             },
             {
-              "id":2,
-              "damage":"blunt",
-              "value":"35 (fire mode), 35 (ice mode), 35 (dragon mode), 35 (no element)"
+              "id": 2,
+              "damage": "blunt",
+              "value": "35 (fire mode), 35 (ice mode), 35 (dragon mode), 35 (no element)"
             },
             {
-              "id":3,
-              "damage":"ranged",
-              "value":"40 (fire mode), 40 (ice mode), 40 (dragon mode), 40 (no element)"
+              "id": 3,
+              "damage": "ranged",
+              "value": "40 (fire mode), 40 (ice mode), 40 (dragon mode), 40 (no element)"
             },
             {
-              "id":4,
-              "damage":"fire",
-              "value":"0 (fire mode), 11 (ice mode), 5 (dragon mode), 10 (no element)"
+              "id": 4,
+              "damage": "fire",
+              "value": "0 (fire mode), 11 (ice mode), 5 (dragon mode), 10 (no element)"
             },
             {
-              "id":5,
-              "damage":"water",
-              "value":"8 (fire mode), 2 (ice mode), 4 (dragon mode), 8 (no element)"
+              "id": 5,
+              "damage": "water",
+              "value": "8 (fire mode), 2 (ice mode), 4 (dragon mode), 8 (no element)"
             },
             {
-              "id":6,
-              "damage":"thunder",
-              "value":"2 (fire mode), 8 (ice mode), 4 (dragon mode), 8 (no element)"
+              "id": 6,
+              "damage": "thunder",
+              "value": "2 (fire mode), 8 (ice mode), 4 (dragon mode), 8 (no element)"
             },
             {
-              "id":7,
-              "damage":"ice",
-              "value":"11 (fire mode), 0 (ice mode), 5 (dragon mode), 10 (no element)"
+              "id": 7,
+              "damage": "ice",
+              "value": "11 (fire mode), 0 (ice mode), 5 (dragon mode), 10 (no element)"
             },
             {
-              "id":8,
-              "damage":"dragon",
-              "value":"1 (fire mode), 1 (ice mode), 7 (dragon mode), 10 (no element)"
+              "id": 8,
+              "damage": "dragon",
+              "value": "1 (fire mode), 1 (ice mode), 7 (dragon mode), 10 (no element)"
             },
             {
-              "id":9,
-              "damage":"stun",
-              "value":0
+              "id": 9,
+              "damage": "stun",
+              "value": 0
             },
             {
-              "id":10,
-              "damage":"stamina",
-              "value":100
-            }
-          ]
-        }
-      ],
-      "breakableparts":[
-        {
-          "id":1,
-          "breakble":"head",
-          "extract":"red"
-        },
-        {
-          "id":2,
-          "breakble":"body",
-          "extract":"orange"
-        },
-        {
-          "id":3,
-          "breakble":"wings",
-          "extract":"white"
-        },
-        {
-          "id":4,
-          "breakble":"arms",
-          "extract":"white"
-        },
-        {
-          "id":5,
-          "breakble":"legs",
-          "extract":"orange"
-        },
-        {
-          "id":2,
-          "breakble":"tail",
-          "extract":"orange"
-        }
-      ],
-      "ailmentresistances":[
-        {
-          "id":1,
-          "ailmentresistance":"mount",
-          "initialresistance":850,
-          "ailmentdecay":null,
-          "ailmentdamage":null,
-          "ailmentduration":null
-        },
-        {
-          "id":2,
-          "ailmentresistance":"stun",
-          "initialresistance":1000,
-          "ailmentdecay":"-5 / 10 seconds",
-          "ailmentdamage":null,
-          "ailmentduration":"7 seconds"
-        },
-        {
-          "id":3,
-          "ailmentresistance":"blast",
-          "initialresistance":2150,
-          "ailmentdecay":null,
-          "ailmentdamage":100,
-          "ailmentduration":null
-        },
-        {
-          "id":4,
-          "ailmentresistance":"sleep",
-          "initialresistance":900,
-          "ailmentdecay":"-5 / 10 seconds",
-          "ailmentdamage":null,
-          "ailmentduration":"40 seconds"
-        },
-        {
-          "id":5,
-          "ailmentresistance":"poison",
-          "initialresistance":900,
-          "ailmentdecay":"-5 / 10 seconds",
-          "ailmentdamage":150,
-          "ailmentduration":"15 seconds"
-        },
-        {
-          "id":5,
-          "ailmentresistance":"paralysis",
-          "initialresistance":900,
-          "ailmentdecay":"-5 / 10 seconds",
-          "ailmentdamage":null,
-          "ailmentduration":"7 seconds"
-        }
-      ],
-      "Rage":[
-        {
-          "id":1,
-          "enragethreshold":"500 damage",
-          "enrageduration":"150 seconds",
-          "enrageattackmod":"x1.2",
-          "enragedefensemod":"x1.2",
-          "enragespeedmod":"1.05",
-          "exhaustspeed":"x1.0",
-          "exhaustduration":"Low Rank 120 seconds, High Rank 120 seconds and Master Rank 120 seconds"
-        }
-      ],
-      "availableat":"Master Rank",
-      "invader":"no",
-      "lowrankrewards":null,
-      "highrankrewards":null,
-      "masterrankrewards":[
-        {
-          "id":1,
-          "masterrankreward":"Alatreon Mantle",
-          "masterankrewardmethods":[
-            {
-              "id":1,
-              "masterankrewardmethod":"carve",
-              "masterrankrewardchance":"32%"
-            },
-            {
-              "id":2,
-              "masterankrewardmethod":"droped",
-              "masterrankrewardchance":"50%"
-            },
-            {
-              "id":3,
-              "masterankrewardmethod":"plunderblade",
-              "masterrankrewardchance":"45%"
-            },
-            {
-              "id":4,
-              "masterankrewardmethod":"palicoes",
-              "masterrankrewardchance":"50%"
-            },
-            {
-              "id":5,
-              "masterankrewardmethod":"monster tracks",
-              "masterrankrewardchance":"100%"
-            },
-            {
-              "id":6,
-              "masterankrewardmethod":"quest complete",
-              "masterrankrewardchance":"25%"
-            },
-            {
-              "id":7,
-              "masterankrewardmethod":"break arms",
-              "masterrankrewardchance":"30%"
-            }
-          ]
-        },
-        {
-          "id":1,
-          "masterrankreward":"Alatreon Pallium",
-          "masterankrewardmethods":[
-            {
-              "id":1,
-              "masterankrewardmethod":"carve",
-              "masterrankrewardchance":"32%"
-            },
-            {
-              "id":2,
-              "masterankrewardmethod":"droped",
-              "masterrankrewardchance":"50%"
-            },
-            {
-              "id":3,
-              "masterankrewardmethod":"plunderblade",
-              "masterrankrewardchance":"45%"
-            },
-            {
-              "id":4,
-              "masterankrewardmethod":"palicoes",
-              "masterrankrewardchance":"50%"
-            },
-            {
-              "id":5,
-              "masterankrewardmethod":"monster tracks",
-              "masterrankrewardchance":"100%"
-            },
-            {
-              "id":6,
-              "masterankrewardmethod":"quest complete",
-              "masterrankrewardchance":"25%"
-            },
-            {
-              "id":7,
-              "masterankrewardmethod":"break arms",
-              "masterrankrewardchance":"30%"
+              "id": 10,
+              "damage": "stamina",
+              "value": 100
             }
           ]
         }
       ],
-      "icon":"https://cdn.kiranico.net/file/kiranico/mhworld-web/mhw/icon/ems002_ID.png",
-      "image":"https://static.wikia.nocookie.net/monsterhunter/images/d/d5/MHW-Apceros_Render_001.png/revision/latest/scale-to-width-down/700?cb=20180209034455"
+      "breakableparts": [
+        {
+          "id": 1,
+          "breakble": "head",
+          "extract": "red"
+        },
+        {
+          "id": 2,
+          "breakble": "body",
+          "extract": "orange"
+        },
+        {
+          "id": 3,
+          "breakble": "wings",
+          "extract": "white"
+        },
+        {
+          "id": 4,
+          "breakble": "arms",
+          "extract": "white"
+        },
+        {
+          "id": 5,
+          "breakble": "legs",
+          "extract": "orange"
+        },
+        {
+          "id": 2,
+          "breakble": "tail",
+          "extract": "orange"
+        }
+      ],
+      "ailmentresistances": [
+        {
+          "id": 1,
+          "ailmentresistance": "mount",
+          "initialresistance": 850,
+          "ailmentdecay": null,
+          "ailmentdamage": null,
+          "ailmentduration": null
+        },
+        {
+          "id": 2,
+          "ailmentresistance": "stun",
+          "initialresistance": 1000,
+          "ailmentdecay": "-5 / 10 seconds",
+          "ailmentdamage": null,
+          "ailmentduration": "7 seconds"
+        },
+        {
+          "id": 3,
+          "ailmentresistance": "blast",
+          "initialresistance": 2150,
+          "ailmentdecay": null,
+          "ailmentdamage": 100,
+          "ailmentduration": null
+        },
+        {
+          "id": 4,
+          "ailmentresistance": "sleep",
+          "initialresistance": 900,
+          "ailmentdecay": "-5 / 10 seconds",
+          "ailmentdamage": null,
+          "ailmentduration": "40 seconds"
+        },
+        {
+          "id": 5,
+          "ailmentresistance": "poison",
+          "initialresistance": 900,
+          "ailmentdecay": "-5 / 10 seconds",
+          "ailmentdamage": 150,
+          "ailmentduration": "15 seconds"
+        },
+        {
+          "id": 5,
+          "ailmentresistance": "paralysis",
+          "initialresistance": 900,
+          "ailmentdecay": "-5 / 10 seconds",
+          "ailmentdamage": null,
+          "ailmentduration": "7 seconds"
+        }
+      ],
+      "Rage": [
+        {
+          "id": 1,
+          "enragethreshold": "500 damage",
+          "enrageduration": "150 seconds",
+          "enrageattackmod": "x1.2",
+          "enragedefensemod": "x1.2",
+          "enragespeedmod": "1.05",
+          "exhaustspeed": "x1.0",
+          "exhaustduration": "Low Rank 120 seconds, High Rank 120 seconds and Master Rank 120 seconds"
+        }
+      ],
+      "availableat": "Master Rank",
+      "invader": "no",
+      "lowrankrewards": null,
+      "highrankrewards": null,
+      "masterrankrewards": [
+        {
+          "id": 1,
+          "masterrankreward": "Alatreon Mantle",
+          "masterankrewardmethods": [
+            {
+              "id": 1,
+              "masterankrewardmethod": "carve",
+              "masterrankrewardchance": "32%"
+            },
+            {
+              "id": 2,
+              "masterankrewardmethod": "droped",
+              "masterrankrewardchance": "50%"
+            },
+            {
+              "id": 3,
+              "masterankrewardmethod": "plunderblade",
+              "masterrankrewardchance": "45%"
+            },
+            {
+              "id": 4,
+              "masterankrewardmethod": "palicoes",
+              "masterrankrewardchance": "50%"
+            },
+            {
+              "id": 5,
+              "masterankrewardmethod": "monster tracks",
+              "masterrankrewardchance": "100%"
+            },
+            {
+              "id": 6,
+              "masterankrewardmethod": "quest complete",
+              "masterrankrewardchance": "25%"
+            },
+            {
+              "id": 7,
+              "masterankrewardmethod": "break arms",
+              "masterrankrewardchance": "30%"
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "masterrankreward": "Alatreon Pallium",
+          "masterankrewardmethods": [
+            {
+              "id": 1,
+              "masterankrewardmethod": "carve",
+              "masterrankrewardchance": "32%"
+            },
+            {
+              "id": 2,
+              "masterankrewardmethod": "droped",
+              "masterrankrewardchance": "50%"
+            },
+            {
+              "id": 3,
+              "masterankrewardmethod": "plunderblade",
+              "masterrankrewardchance": "45%"
+            },
+            {
+              "id": 4,
+              "masterankrewardmethod": "palicoes",
+              "masterrankrewardchance": "50%"
+            },
+            {
+              "id": 5,
+              "masterankrewardmethod": "monster tracks",
+              "masterrankrewardchance": "100%"
+            },
+            {
+              "id": 6,
+              "masterankrewardmethod": "quest complete",
+              "masterrankrewardchance": "25%"
+            },
+            {
+              "id": 7,
+              "masterankrewardmethod": "break arms",
+              "masterrankrewardchance": "30%"
+            }
+          ]
+        }
+      ],
+      "icon": "https://cdn.kiranico.net/file/kiranico/mhworld-web/mhw/icon/ems002_ID.png",
+      "image": "https://static.wikia.nocookie.net/monsterhunter/images/d/d5/MHW-Apceros_Render_001.png/revision/latest/scale-to-width-down/700?cb=20180209034455"
     }
-
+    
   ]
 }

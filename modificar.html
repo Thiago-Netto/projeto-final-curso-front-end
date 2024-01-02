@@ -109,6 +109,7 @@
                     <legend>Campo I - Name</legend>
 
                     <label for="name">Name</label>
+                    <br>
                     <input type="text" id="name" name="name" required>
                   </div>
                     <!--Campo II  - Monster Class-->
@@ -116,6 +117,7 @@
                     <legend>Campo II - Monster Class</legend>
 
                     <label for="monsterclass">Monster Class</label>
+                    <br>
                     <input type="text" id="monsterclass" name="monsterclass" required>
                   </div>
                     <!--Campo III  - Type-->
@@ -123,6 +125,7 @@
                     <legend>Campo III - Type</legend>
 
                     <label for="type">Type</label>
+                    <br>
                     <select name="type" id="type" required>
                       <option value="small">small</option>
                       <option value="large">large</option>
@@ -133,6 +136,7 @@
                     <legend>Campo IV - Size</legend>
 
                     <label for="size">Size</label>
+                    <br>
                     <input type="text" id="size" name="size" required>
                   </div>
                     <!--Campo V  - Health-->
@@ -140,7 +144,8 @@
                     <legend>Campo V - Health</legend>
 
                     <label for="health">Health</label>
-                    <input type="number" name="health" id="health" required>
+                    <br>
+                    <input type="text" name="health" id="health" required>
                   </div>
                     <!--Campo VI  - Habitats-->
                   <div>
@@ -259,6 +264,7 @@
                     <legend>Campo VII - Generation</legend>
 
                     <label for="generation">Generation</label>
+                    <br>
                     <input type="text" id="generation" name="generation" required>
                   </div>
                     <!--Campo VIII  - Introduction-->
@@ -266,6 +272,7 @@
                     <legend>Campo VIII - Introduction</legend>
 
                     <label for="introduction">Introduction</label>
+                    <br>
                     <input type="text" id="introduction" name="introduction" required>
                   </div>
                     <!--Campo IX  - Description-->
@@ -273,6 +280,7 @@
                     <legend>Campo IX - Description</legend>
 
                     <label for="description">Description</label>
+                    <br>
                     <textarea name="description" id="description" cols="60" rows="5" required></textarea>
                   </div>
                     <!--Campo X  - Elements-->
@@ -425,6 +433,8 @@
                     <legend>Campo XII - Bodyparts</legend>
 
                     <!--Bodyparts - Head-->
+                    <div>
+                      <legend>Head</legend><br>
                     <label for="headSever">Head Sever Damage</label>
                     <input type="number" name="headSever" id="headSever" required>
 
@@ -454,7 +464,10 @@
 
                     <label for="headStamina">Head Stamina Damage</label>
                     <input type="number" name="headStamina" id="headStamina" required>
+                    </div><br>
                     <!--Bodyparts - Body-->
+                    <div>
+                      <legend>Body</legend><br>
                     <label for="bodySever">Body Sever Damage</label>
                     <input type="number" name="bodySever" id="bodySever" required>
 
@@ -484,7 +497,10 @@
 
                     <label for="bodyStamina">Body Stamina Damage</label>
                     <input type="number" name="bodyStamina" id="bodyStamina" required>
+                    </div><br>
                     <!--Bodyparts - Wings-->
+                    <div>
+                      <legend>Wings</legend><br>
                     <label for="wingsSever">Wings Sever Damage</label>
                     <input type="number" name="wingsSever" id="wingsSever" required>
 
@@ -514,7 +530,10 @@
 
                     <label for="wingsStamina">Wings Stamina Damage</label>
                     <input type="number" name="wingsStamina" id="wingsStamina" required>
+                    </div><br>
                     <!--Bodyparts - Arms-->
+                    <div>
+                      <legend>Arms</legend><br>
                     <label for="armsSever">Arms Sever Damage</label>
                     <input type="number" name="armsSever" id="armsSever" required>
 
@@ -544,7 +563,10 @@
 
                     <label for="armsStamina">Arms Stamina Damage</label>
                     <input type="number" name="armsStamina" id="armsStamina" required>
+                    </div><br>
                     <!--Bodyparts - Legs-->
+                    <div>
+                      <legend>Legs</legend><br>
                     <label for="legsSever">Legs Sever Damage</label>
                     <input type="number" name="legsSever" id="legsSever" required>
 
@@ -574,7 +596,10 @@
 
                     <label for="legsStamina">Legs Stamina Damage</label>
                     <input type="number" name="legsStamina" id="legsStamina" required>
+                    </div><br>
                     <!--Bodyparts - Tail-->
+                    <div>
+                      <legend>Tail</legend><br>
                     <label for="tailSever">Tail Sever Damage</label>
                     <input type="number" name="tailSever" id="tailSever" required>
 
@@ -604,18 +629,23 @@
 
                     <label for="tailStamina">Tail Stamina Damage</label>
                     <input type="number" name="tailStamina" id="tailStamina" required>
+                    </div><br>
                   </div>
                     <!--Campo XIII  - Breakbleparts-->
                   <div>
                     <legend>Campo XIII - Breakbleparts</legend>                                     
                     <div id="breakableparts-container">
                       <label for="breakablepart">Breakblepart</label>
+                      <br>
                       <select name="breakablepart" id="breakablepart">
                         <option value="head">Head</option>
                         <option value="body">Body</option>
                         <option value="wings">Wings</option>
                         <option value="leftwing">Left Wing</option>
                         <option value="rightwing">Right Wing</option>
+                        <option value="arms">Arms</option>
+                        <option value="leftarm">Left Arm</option>
+                        <option value="rightarm">Right Arm</option>
                         <option value="legs">Legs</option>
                         <option value="leftleg">Left Leg</option>
                         <option value="rightleg">Right Leg</option>
@@ -637,7 +667,7 @@
 
                     <div class="ailment-resistance-mount">
                       <label for="ailmentresistance-mount">Mount</label>
-                      
+                      <br>                      
                       <label for="initialresistance-mount">Initial Resistance</label>
                       <input type="number" name="initialresistance-mount" class="initialresistance-mount">
 
@@ -653,6 +683,7 @@
 
                     <div class="ailment-resistance-stun">
                       <label for="ailmentresistance-stun">Stun</label>
+                      <br>
                       
                       <label for="initialresistance-stun">Initial Resistance</label>
                       <input type="number" name="initialresistance-stun" class="initialresistance-stun">
@@ -669,6 +700,7 @@
 
                     <div class="ailment-resistance-blast">
                       <label for="ailmentresistance-blast">Blast</label>
+                      <br>
                      
                       <label for="initialresistance-blast">Initial Resistance</label>
                       <input type="number" name="initialresistance-blast" class="initialresistance-blast">
@@ -685,6 +717,7 @@
 
                     <div class="ailment-resistance-sleep">
                       <label for="ailmentresistance-sleep">Sleep</label>
+                      <br>
                       
                       <label for="initialresistance-sleep">Initial Resistance</label>
                       <input type="number" name="initialresistance-sleep" class="initialresistance-sleep">
@@ -701,6 +734,7 @@
 
                     <div class="ailment-resistance-poison">
                       <label for="ailmentresistance-poison">Poison</label>
+                      <br>
                      
                       <label for="initialresistance-poison">Initial Resistance</label>
                       <input type="number" name="initialresistance-poison" class="initialresistance-poison">
@@ -717,6 +751,7 @@
 
                     <div class="ailment-resistance-paralysis">
                       <label for="ailmentresistance-paralysis">Paralysis</label>
+                      <br>
                       
                       <label for="initialresistance-paralysis">Initial Resistance</label>
                       <input type="number" name="initialresistance-paralysis" class="initialresistance-paralysis">
@@ -735,39 +770,39 @@
                   <div id="rage-container">
                     <legend>Campo XV - Rage</legend>
                     
-                    <label for="enrageThreshold">Enrage Threshold</label>
-                    <input type="text" name="enrageThreshold" id="enrageThreshold" required>
+                    <label for="enrageThreshold">Enrage Threshold</label><br>
+                    <input type="text" name="enrageThreshold" id="enrageThreshold" required><br>
 
-                    <label for="enrageDuration">Enrage Duration</label>
-                    <input type="text" name="enrageDuration" id="enrageDuration" required>
+                    <label for="enrageDuration">Enrage Duration</label><br>
+                    <input type="text" name="enrageDuration" id="enrageDuration" required><br>
 
-                    <label for="enrageAttackMod">Enrage Attack Mod</label>
-                    <input type="text" name="enrageAttackMod" id="enrageAttackMod" required>
+                    <label for="enrageAttackMod">Enrage Attack Mod</label><br>
+                    <input type="text" name="enrageAttackMod" id="enrageAttackMod" required><br>
 
-                    <label for="enrageDefenseMod">Enrage Defense Mod</label>
-                    <input type="text" name="enrageDefenseMod" id="enrageDefenseMod" required>
+                    <label for="enrageDefenseMod">Enrage Defense Mod</label><br>
+                    <input type="text" name="enrageDefenseMod" id="enrageDefenseMod" required><br>
 
-                    <label for="enrageSpeedMod">Enrage Speed Mod</label>
-                    <input type="text" name="enrageSpeedMod" id="enrageSpeedMod" required>
+                    <label for="enrageSpeedMod">Enrage Speed Mod</label><br>
+                    <input type="text" name="enrageSpeedMod" id="enrageSpeedMod" required><br>
 
-                    <label for="exhaustSpeed">Exhaust Speed</label>
-                    <input type="text" name="exhaustSpeed" id="exhaustSpeed" required>
+                    <label for="exhaustSpeed">Exhaust Speed</label><br>
+                    <input type="text" name="exhaustSpeed" id="exhaustSpeed" required><br>
 
-                    <label for="exhaustDuration">Exhaust Duration</label>
-                    <input type="text" name="exhaustDuration" id="exhaustDuration" required>
+                    <label for="exhaustDuration">Exhaust Duration</label><br>
+                    <input type="text" name="exhaustDuration" id="exhaustDuration" required><br>
                   </div> 
                   <!--Campo XVI  - Available at-->
                   <div>
                     <legend>Campo XVI  - Available at</legend>
 
-                    <label for="availableat">Available at</label>
+                    <label for="availableat">Available at</label><br>
                     <input type="text" id="availableat" name="availableat" required>
                   </div>
                   <!--Campo XVII  - Invader-->
                   <div>
                     <legend>Campo XVII  - Invader</legend>
 
-                    <label for="invader">Invader</label>
+                    <label for="invader">Invader</label><br>
                     <select name="invader" id="invader">
                       <option value="yes">Yes</option>
                       <option value="no">No</option>
