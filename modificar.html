@@ -608,7 +608,7 @@
                     <!--Campo XIII  - Breakbleparts-->
                   <div>
                     <legend>Campo XIII - Breakbleparts</legend>                                     
-                    <div>
+                    <div id="breakableparts-container">
                       <label for="breakablepart">Breakblepart</label>
                       <select name="breakablepart" id="breakablepart">
                         <option value="head">Head</option>
@@ -792,7 +792,7 @@
                         <input type="text" name="lowrankrewardchance" required>
                       </div>                      
                       <!-- Button to add more Reward Methods -->
-                      <button type="button" class="addRewardMethod" data-reward-id="1">Add Reward Method</button>
+                      <button type="button" id="addLowRankRewardMethod" class="addRewardMethod" data-reward-id="1">Add Reward Method</button>
                     </div>
                     <!-- Add a new button for creating new Rewards -->
                     <button type="button" id="addLowRankReward">Add Low Rank Reward</button>
@@ -801,11 +801,11 @@
                     <div>
                     <legend>High Rank Rewards</legend>
                     
-                    <div class="high-rank-reward">
+                    <div class="high-rank-reward" id="high-rank-rewards-container">
                       <label for="highrankreward">High Rank Reward</label>
                       <input type="text" name="highrankreward" required>
                       
-                      <div class="high-rank-reward-method">
+                      <div class="high-rank-reward-method" id="high-rank-reward-method">
                         <label for="highrankrewardmethod">High Rank Reward Method</label>
                         <input type="text" name="highrankrewardmethod" required>
 
@@ -813,7 +813,7 @@
                         <input type="text" name="highrankrewardchance" required>
                       </div>                      
                       <!-- Button to add more Reward Methods -->
-                      <button type="button" class="addRewardMethod" data-reward-id="1">Add Reward Method</button>
+                      <button type="button" id="addHighRankRewardMethod" class="addRewardMethod" data-reward-id="1">Add Reward Method</button>
                     </div>
                     <!-- Add a new button for creating new Rewards -->
                     <button type="button" id="addHighRankReward">Add High Rank Reward</button>
@@ -822,11 +822,11 @@
                     <div>
                     <legend>Master Rank Rewards</legend>
                     
-                    <div class="master-rank-reward">
+                    <div class="master-rank-reward" id="master-rank-rewards-container">
                       <label for="masterrankreward">Master Rank Reward</label>
                       <input type="text" name="masterrankreward" required>
                       
-                      <div class="master-rank-reward-method">
+                      <div class="master-rank-reward-method" id="master-rank-reward-method">
                         <label for="masterrankrewardmethod">Master Rank Reward Method</label>
                         <input type="text" name="Masterrankrewardmethod" required>
 
@@ -834,7 +834,7 @@
                         <input type="text" name="masterrankrewardchance" required>
                       </div>                      
                       <!-- Button to add more Reward Methods -->
-                      <button type="button" class="addRewardMethod" data-reward-id="1">Add Reward Method</button>
+                      <button type="button" id="addMasterRankRewardMethod" class="addRewardMethod" data-reward-id="1">Add Reward Method</button>
                     </div>
                     <!-- Add a new button for creating new Rewards -->
                     <button type="button" id="addMasterRankReward">Add Master Rank Reward</button>
