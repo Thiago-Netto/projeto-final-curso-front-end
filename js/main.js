@@ -61,19 +61,55 @@ const createMonstroCardElement = (monstro) => {
     `;
     return monstroCardElement;
 };
+
+async function createNewMonstro(monstro) {
+    try {
+        await createMonstro(monstro);
+        alert('Monster created successfully!');
+        // You can add additional logic or redirect to another page if needed
+    } catch (error) {
+        console.error('Error creating monster:', error);
+        alert('Error creating monster. Please try again.');
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     const createMonsterButton = document.getElementById('btn-create');
     const breakablepartsContainer = document.getElementById('breakableparts-container');
+    const ailmentsResistancesContainer = document.getElementById('ailments-resistances-container');
+    const lowRankRewardsContainer = document.getElementById('low-rank-rewards-container');
+    
 
     createMonsterButton.addEventListener('click', function (event) {
         event.preventDefault();
     
         const breakablepartContainers = breakablepartsContainer.getElementsByClassName('breakablepart-container');
+        const ailmentsResistances = Array.from(ailmentsResistancesContainer.getElementsByClassName('ailment-resistance')).map(container => ({
+            initialresistance: container.querySelector('.initialresistance').value,
+            ailmentdecay: container.querySelector('.ailmentdecay').value,
+            ailmentdamage: container.querySelector('.ailmentdamage').value,
+            ailmentduration: container.querySelector('.ailmentduration').value,
+        }));
+        const rageContainer = Array.from.getElementsById('rage-container').map(document =>({
+            enragethreshold: document.getElementById('enrageThreshold').value,
+            enrageduration: document.getElementById('enrageDuration').value,
+            enrageattackmod: document.getElementById('enrageAttackMod').value,
+            enragedefensemod: document.getElementById('enrageDefenseMod').value,
+            enragespeedmod: document.getElementById('enrageSpeedMod').value,
+            exhaustspeed: document.getElementById('exhaustSpeed').value,
+            exhaustduration: document.getElementById('exhaustDuration').value,
+        }));
 
-        const breakableparts = Array.from(breakablepartContainers).map(container => ({
+        const breakableParts = Array.from(breakablepartContainers).map(container => ({
             breakable: container.querySelector('.breakablepart').value,
             extract: container.querySelector('.extract').value,
         }));
+
+        const lowRankRewards = Array.from(lowRankRewardsContainer.getElementsByClassName('low-rank-reward')).map(container => ({
+            lowrankreward: container.querySelector('.lowrankreward').value,
+            lowrankrewardmethod: container.querySelector('.lowrankrewardmethod').value,
+            lowrankrewardchance: container.querySelector('.lowrankrewardchance').value,
+        }))
 
     const bodyParts = [];
 
@@ -112,12 +148,20 @@ document.addEventListener('DOMContentLoaded', function () {
         ailments: Array.from(document.querySelectorAll('input[name="ailments"]:checked')).map(checkbox => checkbox.value),
         bodyparts: bodyParts,
         breakableparts: breakableParts,
-
+        ailmentsresistances: ailmentsResistances,
+        rage: rageContainer,
+        availableat: document.getElementById('availableat').value,
+        invader: document.getElementById('invader').value,
+        lowrankrewards: ,
+        highrankrewards: , 
+        masterrankrewards: ,
+        icon: document.getelementById('icon').value,
+        image: document.getElementById('image').value      
 
     };
 
     const addBreakablePartButton = document.getElementById('create-breakablepart');
-
+    
     addBreakablePartButton.addEventListener('click', function () {
         createBreakablePart();
     });
@@ -149,15 +193,45 @@ document.addEventListener('DOMContentLoaded', function () {
 
         initializeBreakablePartButton(newBreakablePartContainer);
     }
-
     function initializeBreakablePartButton(container) {
         const createBreakablePartButton = container.querySelector('.create-breakablepart');
         createBreakablePartButton.addEventListener('click', function () {
             createBreakablePart();
         });
     }
+
+    const addLowRankRewardButton = document.getElementById('addLowRankReward');
+
+    function createLowRankReward() {
+        const newLowRankRewardContainer = document.createElement('div');
+        newLowRankRewardContainer.classList.add('low-rank-reward');
+        newLowRankRewardContainer.innerHTML = `
+            <label for="lowrankreward">Low Rank Reward</label>
+            <input type="text" name="lowrankreward" required>
+            
+            <div class="low-rank-reward-method">
+                <label for="lowrankrewardmethod">Low Rank Reward Method</label>
+                <input type="text" name="lowrankrewardmethod" required>
+
+                <label for="lowrankrewardchance">Low Rank Reward Chance</label>
+                <input type="text" name="lowrankrewardchance" required>
+            </div>                      
+            <button type="button" class="addRewardMethod" data-reward-id="1">Add Reward Method</button>
+        `;
+
+        lowRankRewardsContainer.appendChild(newLowRankRewardContainer);
+        initializeLowRankRewardButton(newLowRankRewardContainer);
+
+        function initializeLowRankRewardButton(container) {
+            const addLowRankRewardButton = container.querySelector('.addLowRankReward');
+            addLowRankRewardButton.addEventListener('click', function () {
+                createLowRankReward();
+            });
+        }
+        
     createNewMonstro(monstro);
-});
+}
+})}),
 
 
          
