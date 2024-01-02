@@ -1,13 +1,11 @@
-import { getAllMonsters, createMonstro, deleteMonstro, updateMonstro  }from "./services.js"
-
 window.onload = async () => {
     const monsters = await loadAllMonsters();
     generateElements(monsters);
-}
+};
 
 const loadAllMonsters = () => {
     return getAllMonsters();
-}
+};
 
 const generateElements = (monsters) => {
     const dataContainer = document.getElementById("todos-monstros");
@@ -15,12 +13,7 @@ const generateElements = (monsters) => {
     const carregarMonstros = () => {
         try {
             monsters.forEach((monstro) => {
-                const monstroElement = document.createElement("div");
-                monstroElement.innerHTML = `
-                    <div>
-                        <p>${monstro.name}</p>                       
-                    </div>
-                `;
+                const monstroElement = createMonstroElement(monstro);
                 dataContainer.appendChild(monstroElement);
             });
         } catch (error) {
@@ -28,54 +21,146 @@ const generateElements = (monsters) => {
         }
     };
 
-    const carregarMonstrosPequenos = () => {
-        const dataContainerPequenos = document.getElementById("monstrosPequenos");
-
+    const carregarMonstrosByType = (type, containerId) => {
+        const dataContainer = document.getElementById(containerId);
         try {
-            const monstrosPequenos = monsters.filter(monstro => monstro.type === "pequeno");
-            monstrosPequenos.forEach((monstro) => {
-                const monstroElement = document.createElement("div");
-                monstroElement.innerHTML = `
-                    <div class="cartao">
-                        <img class="cartao-img" src="${monstro.icone}" alt="${monstro.name}">
-                        <div class="cartao-conteudo">
-                             <h5 class="cartao-nome">${monstro.name}</h5>
-                        </div>
-                    </div>
-                `;
-                dataContainerPequenos.appendChild(monstroElement);
+            const monstrosByType = monsters.filter(monstro => monstro.type === type);
+            monstrosByType.forEach((monstro) => {
+                const monstroElement = createMonstroCardElement(monstro);
+                dataContainer.appendChild(monstroElement);
             });
         } catch (error) {
-            console.log('Error in carregarMonstrosPequenos >>>', error);
-        }
-    };
-
-    const carregarMonstrosGrandes = () => {
-        const dataContainerGrandes = document.getElementById("monstrosGrandes");
-
-        try {
-            const monstrosGrandes = monsters.filter(monstro => monstro.type === "grande");
-            monstrosGrandes.forEach((monstro) => {
-                const monstroElement = document.createElement("div");
-                monstroElement.innerHTML = `
-                    <div class="cartao">
-                        <img class="cartao-img" src="${monstro.icone}" alt="${monstro.name}">
-                        <div class="cartao-conteudo">
-                             <h5 class="cartao-nome">${monstro.name}</h5>
-                        </div>
-                    </div>
-                `;
-                dataContainerGrandes.appendChild(monstroElement);
-            });
-        } catch (error) {
-            console.log('Error in carregarMonstrosGrandes >>>', error);
+            console.log(`Error in carregarMonstros${type} >>>`, error);
         }
     };
 
     carregarMonstros();
-    carregarMonstrosPequenos();
-    carregarMonstrosGrandes();
+    carregarMonstrosByType('pequeno', 'monstrosPequenos');
+    carregarMonstrosByType('grande', 'monstrosGrandes');
 };
+
+const createMonstroElement = (monstro) => {
+    const monstroElement = document.createElement("div");
+    monstroElement.innerHTML = `
+        <div>
+            <p>${monstro.name}</p>                       
+        </div>
+    `;
+    return monstroElement;
+};
+
+const createMonstroCardElement = (monstro) => {
+    const monstroCardElement = document.createElement("div");
+    monstroCardElement.innerHTML = `
+        <div class="cartao">
+            <img class="cartao-img" src="${monstro.icon}" alt="${monstro.name}">
+            <div class="cartao-conteudo">
+                <h5 class="cartao-nome">${monstro.name}</h5>
+            </div>
+        </div>
+    `;
+    return monstroCardElement;
+};
+document.addEventListener('DOMContentLoaded', function () {
+    const createMonsterButton = document.getElementById('btn-create');
+    const breakablepartsContainer = document.getElementById('breakableparts-container');
+
+    createMonsterButton.addEventListener('click', function (event) {
+        event.preventDefault();
+    
+        const breakablepartContainers = breakablepartsContainer.getElementsByClassName('breakablepart-container');
+
+        const breakableparts = Array.from(breakablepartContainers).map(container => ({
+            breakable: container.querySelector('.breakablepart').value,
+            extract: container.querySelector('.extract').value,
+        }));
+
+    const bodyParts = [];
+
+        const bodyPartNames = ['head', 'body', 'wings', 'arms', 'legs', 'tail'];
+
+        bodyPartNames.forEach(bodyPartName => {
+            const bodyPartObj = {
+                bodypart: bodyPartName,
+                damages: [],
+            };
+
+            const damageTypes = ['sever', 'blunt', 'ranged', 'fire', 'water', 'thunder', 'ice', 'dragon', 'stun', 'stamina'];
+
+            damageTypes.forEach(damageType => {
+                const damageValue = document.getElementById(`${bodyPartName}${damageType.charAt(0).toUpperCase() + damageType.slice(1)}`).value;
+                bodyPartObj.damages.push({
+                    damage: damageType,
+                    value: Number(damageValue),
+                });
+            });
+
+            bodyParts.push(bodyPartObj);
+        });
+
+    const monstro = {
+        name: document.getElementById('name').value,
+        monsterclass: document.getElementById('monsterclass').value,
+        type: document.getElementById('type').value,
+        size: document.getElementById('size').value,
+        health: document.getElementById('health').value,
+        habitats: Array.from(document.querySelectorAll('input[name="habitats"]:checked')).map(checkbox => checkbox.value),        
+        generation: document.getElementById('generation').value,
+        introduction: document.getElementById('introduction').value,
+        description: document.getElementById('description').value,
+        elements: Array.from(document.querySelectorAll('input[name="elements"]:checked')).map(checkbox => checkbox.value),
+        ailments: Array.from(document.querySelectorAll('input[name="ailments"]:checked')).map(checkbox => checkbox.value),
+        bodyparts: bodyParts,
+        breakableparts: breakableParts,
+
+
+    };
+
+    const addBreakablePartButton = document.getElementById('create-breakablepart');
+
+    addBreakablePartButton.addEventListener('click', function () {
+        createBreakablePart();
+    });
+
+    function createBreakablePart() {
+        const uniqueId = new Date().getTime(); // Generate a unique ID
+
+        const newBreakablePartContainer = document.createElement('div');
+        newBreakablePartContainer.classList.add('breakablepart-container');
+        newBreakablePartContainer.innerHTML = `
+            <label for="breakablepart-${uniqueId}">Breakablepart</label>
+            <select name="breakablepart-${uniqueId}" class="breakablepart">
+                <option value="head">Head</option>
+                <option value="body">Body</option>
+                <option value="wings">Wings</option>
+                <!-- Add more options as needed -->
+            </select>
+            <label for="extract-${uniqueId}">Extract</label>
+            <select name="extract-${uniqueId}" class="extract">
+                <option value="green">Green</option>
+                <option value="orange">Orange</option>
+                <option value="red">Red</option>
+                <option value="white">White</option>
+            </select>
+            <button class="create-breakablepart">Add Breakable Part and Extract</button>
+        `;
+
+        breakablepartsContainer.appendChild(newBreakablePartContainer);
+
+        initializeBreakablePartButton(newBreakablePartContainer);
+    }
+
+    function initializeBreakablePartButton(container) {
+        const createBreakablePartButton = container.querySelector('.create-breakablepart');
+        createBreakablePartButton.addEventListener('click', function () {
+            createBreakablePart();
+        });
+    }
+    createNewMonstro(monstro);
+});
+
+
+         
 
   document.getElementById('btn-delete').addEventListener('click', () => {
     const monstro = { 
@@ -253,7 +338,7 @@ const generateElements = (monsters) => {
     createMonsterButton.addEventListener('click', function(event) {
         event.preventDefault();
 
-        const formData = new FormData(monsterForm);
+        const formData = new FormData(monsterform);
         const monstro = {
             
             breakbleparts: breakbleparts,
