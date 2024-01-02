@@ -101,87 +101,802 @@
             </section>
             <!--Criar-->
             <section>
-                <form id="criarmonstro">
-                    <h2>Adicionar Monstro</h2>
-                    
-                    <label for="name-do-monstro">Nome</label>
-                    <input id="name-do-monstro" type="text">
-                    
-                    <label for="type-do-monstro">Tipo</label>
-                    <select name="type-do-monstro" id="type-do-monstro">
-                      <option value="pequeno">Pequeno</option>
-                      <option value="grande">Grande</option>
+                <h2>Adicionar Monstro</h2>
+                
+                <form id="monsterform">
+                    <!--Campo I  - Name-->
+                  <div>
+                    <legend>Campo I - Name</legend>
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                  </div>
+                    <!--Campo II  - Monster Class-->
+                  <div>
+                    <legend>Campo II - Monster Class</legend>
+
+                    <label for="monsterclass">Monster Class</label>
+                    <input type="text" id="monsterclass" name="monsterclass" required>
+                  </div>
+                    <!--Campo III  - Type-->
+                  <div>
+                    <legend>Campo III - Type</legend>
+
+                    <label for="type">Type</label>
+                    <select name="type" id="type" required>
+                      <option value="small">small</option>
+                      <option value="large">large</option>
                     </select>
+                  </div>
+                    <!--Campo IV  - Size-->
+                  <div>
+                    <legend>Campo IV - Size</legend>
+
+                    <label for="size">Size</label>
+                    <input type="text" id="size" name="size" required>
+                  </div>
+                    <!--Campo V  - Health-->
+                  <div>
+                    <legend>Campo V - Health</legend>
+
+                    <label for="health">Health</label>
+                    <input type="number" name="health" id="health" required>
+                  </div>
+                    <!--Campo VI  - Habitats-->
+                  <div>
+                    <legend>Campo VI - Habitats</legend>
+
+                    <label for="habitats">Habitats</label>
+                    <input type="radio" name="habitats" id="ancientforest" value="ancientforest">
+                    <label for="ancientforest">Ancient Forest</label>
+
+                    <input type="radio" name="habitats" id="wildspirewaste" value="wildspirewaste">
+                    <label for="wildspirewaste">Wildspire Waste</label>
+
+                    <input type="radio" name="habitats" id="coralhighlands" value="coralhighlands">
+                    <label for="coralhighlands">Coral Highlands</label>
+
+                    <input type="radio" name="habitats" id="rottenvale" value="rottenvale">
+                    <label for="rottenvale">Rotten Vale</label>
+
+                    <input type="radio" name="habitats" id="eldersrecess" value="eldersrecess">
+                    <label for="eldersrecess">Elder's Recess</label>
+
+                    <input type="radio" name="habitats" id="hoarfrostreach" value="hoarfrostreach">
+                    <label for="hoarfrostreach">Hoarfrost Reach</label>
+
+                    <input type="radio" name="habitats" id="guidinglands" value="guidinglands">
+                    <label for="guidinglands">Guiding Lands</label>
+
+                    <input type="radio" name="habitats" id="greatravine" value="greatravine">
+                    <label for="greatravine">Great Ravine</label>
+
+                    <input type="radio" name="habitats" id="everstream" value="everstream">
+                    <label for="everstream">Everstream</label>
+
+                    <input type="radio" name="habitats" id="confluenceoffates" value="confluenceoffates">
+                    <label for="confluenceoffates">Confluence of Fates</label>
+
+                    <input type="radio" name="habitats" id="cavernsofeldorado" value="cavernsofeldorado">
+                    <label for="cavernsofeldorado">Caverns of El Dorado</label>
+
+                    <input type="radio" name="habitats" id="selianasupplycache" value="selianasupplycache">
+                    <label for="selianasupplycache">Seliana Supply Cache</label>
+
+                    <input type="radio" name="habitats" id="originisle" value="originisle">
+                    <label for="originisle">Origin Isle</label>
+
+                    <input type="radio" name="habitats" id="secludedvalley" value="secludedvalley">
+                    <label for="secludedvalley">Secluded Valley</label>
+
+                    <input type="radio" name="habitats" id="castleschrade" value="castleschrade">
+                    <label for="castleschrade">Castle Schrade</label>
+                  </div>
+                    <!--Campo VII  - Generation-->
+                  <div>
+                    <legend>Campo VII - Generation</legend>
+
+                    <label for="generation">Generation</label>
+                    <input type="text" id="generation" name="generation" required>
+                  </div>
+                    <!--Campo VIII  - Introduction-->
+                  <div>
+                    <legend>Campo VIII - Introduction</legend>
+
+                    <label for="introduction">Introduction</label>
+                    <input type="text" id="introduction" name="introduction" required>
+                  </div>
+                    <!--Campo IX  - Description-->
+                  <div>
+                    <legend>Campo IX - Description</legend>
+
+                    <label for="description">Description</label>
+                    <textarea name="description" id="description" cols="60" rows="5" required></textarea>
+                  </div>
+                    <!--Campo X  - Elements-->
+                  <div>
+                    <legend>Campo X - Elements</legend>
+
+                    <label for="elements">Elements</label>
+                    <input type="radio" name="elements" id="fire" value="fire">
+                    <label for="fire">Fire</label>
+
+                    <input type="radio" name="elements" id="water" value="water">
+                    <label for="water">Water</label>
+
+                    <input type="radio" name="elements" id="thunder" value="thunder">
+                    <label for="thunder">Thunder</label>
+
+                    <input type="radio" name="elements" id="ice" value="ice">
+                    <label for="ice">Ice</label>
+
+                    <input type="radio" name="elements" id="dragon" value="dragon">
+                    <label for="dragon">Dragon</label>
+                  </div>
+                    <!--Campo XI  - Ailments-->
+                  <div>
+                    <legend>Campo XI - Ailments</legend>
+
+                    <label for="ailments">Ailments</label>
+                    <input type="radio" name="ailments" id="fireblight" value="fireblight">
+                    <label for="fireblight">Fireblight</label>
+
+                    <input type="radio" name="ailments" id="waterblight" value="waterblight">
+                    <label for="waterblight">Waterblight</label>
+
+                    <input type="radio" name="ailments" id="thunderblight" value="thunderblight">
+                    <label for="thunderblight">Thunderblight</label>
+
+                    <input type="radio" name="ailments" id="iceblight" value="iceblight">
+                    <label for="iceblight">Iceblight</label>
+
+                    <input type="radio" name="ailments" id="dragonblight" value="dragonblight">
+                    <label for="dragonblight">Dragonblight</label>
+
+                    <input type="radio" name="ailments" id="poison" value="poison">
+                    <label for="poison">Poison</label>
+
+                    <input type="radio" name="ailments" id="paralysis" value="paralysis">
+                    <label for="paralysis">Paralysis</label>
+
+                    <input type="radio" name="ailments" id="sleep" value="sleep">
+                    <label for="sleep">Sleep</label>
+
+                    <input type="radio" name="ailments" id="stun" value="stun">
+                    <label for="stun">Stun</label>
+
+                    <input type="radio" name="blastblight" id="blastblight" value="blastblight">
+                    <label for="blastblight">Blastblight</label>
+
+                    <input type="radio" name="ailments" id="deadlypoison" value="deadlypoison">
+                    <label for="deadlypoison">Deadly Poison</label>
+
+                    <input type="radio" name="ailments" id="defensedown" value="defensedown">
+                    <label for="defensedown">Defense Down</label>
+
+                    <input type="radio" name="ailments" id="bleeding" value="bleeding">
+                    <label for="bleeding">Bleeding</label>
                     
-                    <label for="especie-do-monstro">Espécie</label>
-                    <input id="especie-do-monstro" type="text">
+                    <input type="radio" name="ailments" id="effluvium" value="effluvium">
+                    <label for="effluvium">Effluvium</label>
+                  </div>
+                    <!--Campo XII  - Bodyparts-->
+                  <div>
+                    <legend>Campo XII - Bodyparts</legend>
+
+                    <!--Bodyparts - Head-->
+                    <label for="headSever">Head Sever Damage</label>
+                    <input type="number" name="headSever" id="headSever" required>
+
+                    <label for="headBlunt">Head Blunt Damage</label>
+                    <input type="number" name="headBlunt" id="headBlunt" required>
                     
-                    <label for="descricao-do-monstro">Descrição</label>
-                    <textarea name="descricao-do-monstro" id="descricao-do-monstro" cols="60" rows="5"></textarea>
+                    <label for="headRanged">Head Ranged Damage</label>
+                    <input type="number" name="headRanged" id="headRanged" required>
+
+                    <label for="headFire">Head Fire Damage</label>
+                    <input type="number" name="headFire" id="headFire" required>
+
+                    <label for="headWater">Head Water Damage</label>
+                    <input type="number" name="headWater" id="headWater" required>
+
+                    <label for="headThunder">Head Thunder Damage</label>
+                    <input type="number" name="headThunder" id="headThunder" required>
+
+                    <label for="headIce">Head Ice Damage</label>
+                    <input type="number" name="headIce" id="headIce" required>
+
+                    <label for="headDragon">Head Dragon Damage</label>
+                    <input type="number" name="headDragon" id="headDragon" required>
+
+                    <label for="headStun">Head Stun Damage</label>
+                    <input type="number" name="headStun" id="headStun" required>
+
+                    <label for="headStamina">Head Stamina Damage</label>
+                    <input type="number" name="headStamina" id="headStamina" required>
+                    <!--Bodyparts - Body-->
+                    <label for="bodySever">Body Sever Damage</label>
+                    <input type="number" name="bodySever" id="bodySever" required>
+
+                    <label for="bodyBlunt">Body Blunt Damage</label>
+                    <input type="number" name="bodyBlunt" id="bodyBlunt" required>
                     
-                    <label for="elementos-do-monstro">Elemento</label>
-                    <select name="elementos-do-monstro" id="elementos-do-monstro">
-                      <option value="fogo">Fogo</option>
-                      <option value="agua">Água</option>
-                      <option value="trovao">Trovão</option>
-                      <option value="gelo">Gelo</option>
-                      <option value="dragao">Dragão</option>
+                    <label for="bodyRanged">Body Ranged Damage</label>
+                    <input type="number" name="bodyRanged" id="bodyRanged" required>
+
+                    <label for="bodyFire">Body Fire Damage</label>
+                    <input type="number" name="bodyFire" id="bodyFire" required>
+
+                    <label for="bodyWater">Body Water Damage</label>
+                    <input type="number" name="bodyWater" id="bodyWater" required>
+
+                    <label for="bodyThunder">Body Thunder Damage</label>
+                    <input type="number" name="bodyThunder" id="bodyThunder" required>
+
+                    <label for="bodyIce">Body Ice Damage</label>
+                    <input type="number" name="bodyIce" id="bodyIce" required>
+
+                    <label for="bodyDragon">Body Dragon Damage</label>
+                    <input type="number" name="bodyDragon" id="bodyDragon" required>
+
+                    <label for="bodyStun">Body Stun Damage</label>
+                    <input type="number" name="bodyStun" id="bodyStun" required>
+
+                    <label for="bodyStamina">Body Stamina Damage</label>
+                    <input type="number" name="bodyStamina" id="bodyStamina" required>
+                    <!--Bodyparts - Wings-->
+                    <label for="wingsSever">Wings Sever Damage</label>
+                    <input type="number" name="wingsSever" id="wingsSever" required>
+
+                    <label for="wingsBlunt">Wings Blunt Damage</label>
+                    <input type="number" name="wingsBlunt" id="wingsBlunt" required>
+                    
+                    <label for="wingsRanged">Wings Ranged Damage</label>
+                    <input type="number" name="wingsRanged" id="wingsRanged" required>
+
+                    <label for="wingsFire">Wings Fire Damage</label>
+                    <input type="number" name="wingsFire" id="wingsFire" required>
+
+                    <label for="wingsWater">Wings Water Damage</label>
+                    <input type="number" name="wingsWater" id="wingsWater" required>
+
+                    <label for="wingsThunder">Wings Thunder Damage</label>
+                    <input type="number" name="wingsThunder" id="wingsThunder" required>
+
+                    <label for="wingsIce">Wings Ice Damage</label>
+                    <input type="number" name="wingsIce" id="wingsIce" required>
+
+                    <label for="wingsDragon">Wings Dragon Damage</label>
+                    <input type="number" name="wingsDragon" id="wingsDragon" required>
+
+                    <label for="wingsStun">Wings Stun Damage</label>
+                    <input type="number" name="wingsStun" id="wingsStun" required>
+
+                    <label for="wingsStamina">Wings Stamina Damage</label>
+                    <input type="number" name="wingsStamina" id="wingsStamina" required>
+                    <!--Bodyparts - Arms-->
+                    <label for="armsSever">Arms Sever Damage</label>
+                    <input type="number" name="armsSever" id="armsSever" required>
+
+                    <label for="armsBlunt">Arms Blunt Damage</label>
+                    <input type="number" name="armsBlunt" id="armsBlunt" required>
+                    
+                    <label for="armsRanged">Arms Ranged Damage</label>
+                    <input type="number" name="armsRanged" id="armsRanged" required>
+
+                    <label for="armsFire">Arms Fire Damage</label>
+                    <input type="number" name="armsFire" id="armsFire" required>
+
+                    <label for="armsWater">Arms Water Damage</label>
+                    <input type="number" name="armsWater" id="armsWater" required>
+
+                    <label for="armsThunder">Arms Thunder Damage</label>
+                    <input type="number" name="armsThunder" id="armsThunder" required>
+
+                    <label for="armsIce">Arms Ice Damage</label>
+                    <input type="number" name="armsIce" id="armsIce" required>
+
+                    <label for="armsDragon">Arms Dragon Damage</label>
+                    <input type="number" name="armsDragon" id="armsDragon" required>
+
+                    <label for="armsStun">Arms Stun Damage</label>
+                    <input type="number" name="armsStun" id="armsStun" required>
+
+                    <label for="armsStamina">Arms Stamina Damage</label>
+                    <input type="number" name="armsStamina" id="armsStamina" required>
+                    <!--Bodyparts - Legs-->
+                    <label for="legsSever">Legs Sever Damage</label>
+                    <input type="number" name="legsSever" id="legsSever" required>
+
+                    <label for="legsBlunt">Legs Blunt Damage</label>
+                    <input type="number" name="legsBlunt" id="legsBlunt" required>
+                    
+                    <label for="legsRanged">Legs Ranged Damage</label>
+                    <input type="number" name="legsRanged" id="legsRanged" required>
+
+                    <label for="legsFire">Legs Fire Damage</label>
+                    <input type="number" name="legsFire" id="legsFire" required>
+
+                    <label for="legsWater">Legs Water Damage</label>
+                    <input type="number" name="legsWater" id="legsWater" required>
+
+                    <label for="legsThunder">Legs Thunder Damage</label>
+                    <input type="number" name="legsThunder" id="legsThunder" required>
+
+                    <label for="legsIce">Legs Ice Damage</label>
+                    <input type="number" name="legsIce" id="legsIce" required>
+
+                    <label for="legsDragon">Legs Dragon Damage</label>
+                    <input type="number" name="legsDragon" id="legsDragon" required>
+
+                    <label for="legsStun">Legs Stun Damage</label>
+                    <input type="number" name="legsStun" id="legsStun" required>
+
+                    <label for="legsStamina">Legs Stamina Damage</label>
+                    <input type="number" name="legsStamina" id="legsStamina" required>
+                    <!--Bodyparts - Tail-->
+                    <label for="tailSever">Tail Sever Damage</label>
+                    <input type="number" name="tailSever" id="tailSever" required>
+
+                    <label for="tailBlunt">Tail Blunt Damage</label>
+                    <input type="number" name="tailBlunt" id="tailBlunt" required>
+                    
+                    <label for="tailRanged">Tail Ranged Damage</label>
+                    <input type="number" name="tailRanged" id="tailRanged" required>
+
+                    <label for="tailFire">Tail Fire Damage</label>
+                    <input type="number" name="tailFire" id="tailFire" required>
+
+                    <label for="tailWater">Tail Water Damage</label>
+                    <input type="number" name="tailWater" id="tailWater" required>
+
+                    <label for="tailThunder">Tail Thunder Damage</label>
+                    <input type="number" name="tailThunder" id="tailThunder" required>
+
+                    <label for="tailIce">Tail Ice Damage</label>
+                    <input type="number" name="tailIce" id="tailIce" required>
+
+                    <label for="tailDragon">Tail Dragon Damage</label>
+                    <input type="number" name="tailDragon" id="tailDragon" required>
+
+                    <label for="tailStun">Tail Stun Damage</label>
+                    <input type="number" name="tailStun" id="tailStun" required>
+
+                    <label for="tailStamina">Tail Stamina Damage</label>
+                    <input type="number" name="tailStamina" id="tailStamina" required>
+                  </div>
+                    <!--Campo XIII  - Breakbleparts-->
+                  <div>
+                    <legend>Campo XIII - Breakbleparts</legend>
+                  
+                    <label for="breakblepart1">Breakblepart</label>
+                    <select name="breakblepart1" id="breakblepart1">
+                      <option value="head">Head</option>
+                      <option value="body">Body</option>
+                      <option value="wings">Wings</option>
+                      <option value="leftwing">Left Wing</option>
+                      <option value="rightwing">Right Wing</option>
+                      <option value="legs">Legs</option>
+                      <option value="leftleg">Left Leg</option>
+                      <option value="rightleg">Right Leg</option>
+                      <option value="tail">Tail</option>
                     </select>
-                    
-                    <label for="aflicoes-do-monstro">Aflições que pode infligir</label>
-                    <select name="aflicoes-do-monstro" id="aflicoes-do-monstro">
-                      <option value="veneno">Veneno</option>
-                      <option value="paralisia">Paralisia</option>
-                      <option value="sono">Sono</option>
-                      <option value="blastblight">Blastblight</option>
-                      <option value="fireblight">Fireblight</option>
-                      <option value="waterblight">Waterblight</option>
-                      <option value="thunderblight">thunderblight</option>
-                      <option value="iceblight">Iceblight</option>
-                      <option value="dragonblight">Dragonblight</option>
-                      <option value="nocaute">Nocaute</option>
-                      <option value="sangramento">Sangramento</option>
+                    <label for="extract1">Extract</label>
+                    <select name="extract1" id="extract1">
+                      <option value="green">Green</option>
+                      <option value="orange">Orange</option>
+                      <option value="red">Red</option>
+                      <option value="white">White</option>
                     </select>
-        
-                    <label for="locais-do-monstro">Habitat</label>
-                    <select name="locais-do-monstro" id="locais-do-monstro">
-                      <option value="ancientForest">Ancient Forest</option>
-                      <option value="wildspireWaste">WildspireWaste</option>
-                      <option value="coralHighlands">Coral Highlands</option>
-                      <option value="rottenVale">Rotten Vale</option>
-                      <option value="eldersRecess">Elder's Recess</option>
-                      <option value="everstream">Everstream</option>
-                      <option value="greatravine">Great Ravine</option>
+
+                    <label for="breakblepart2">Breakblepart</label>
+                    <select name="breakblepart2" id="breakblepart2">
+                      <option value="head">Head</option>
+                      <option value="body">Body</option>
+                      <option value="wings">Wings</option>
+                      <option value="leftwing">Left Wing</option>
+                      <option value="rightwing">Right Wing</option>
+                      <option value="legs">Legs</option>
+                      <option value="leftleg">Left Leg</option>
+                      <option value="rightleg">Right Leg</option>
+                      <option value="tail">Tail</option>
                     </select>
-                    
-                    <label for="partes-do-monstro">Partes</label>
-                    <textarea name="partes-do-monstro" id="partes-do-monstro" cols="60" rows="20"></textarea>
-        
-                    <label for="resistencia-do-monstro">Resistência a Aflições</label>
-                    <textarea name="resistencia-do-monstro" id="resistencia-do-monstro" cols="60" rows="20"></textarea>
-                    
-                    <label for="recompensa-lr-do-monstro">Recompensas Low Rank</label>
-                    <textarea name="recompensa-lr-do-monstro" id="recompensa-lr-do-monstro" cols="60" rows="20"></textarea>
-        
-                    <label for="recompensa-hr-do-monstro">Recompensas High Rank</label>
-                    <textarea name="recompensa-hr-do-monstro" id="recompensa-hr-do-monstro" cols="60" rows="20"></textarea>
-        
-                    <label for="partes-quebraveis-do-monstro">Partes Quebráveis</label>
-                    <select name="partes-quebraveis-do-monstro" id="partes-quebraveis-do-monstro">
-                      <option value="cabeca">Cabeça</option>
-                      <option value="corpo">Corpo</option>
-                      <option value="bracos">Braços</option>
-                      <option value="pernas">Pernas</option>
-                      <option value="asas">asas</option>
-                      <option value="cauda">Cauda</option>
+                    <label for="extract2">Extract</label>
+                    <select name="extract2" id="extract2">
+                      <option value="green">Green</option>
+                      <option value="orange">Orange</option>
+                      <option value="red">Red</option>
+                      <option value="white">White</option>
                     </select>
-        
-                    <label for="icon-do-monstro"></label>
-                    <input id="icon-do-monstro" type="url">
-        
-                    <label for="img-do-monstro"></label>
-                    <input id="img-do-monstro" type="url">
+
+                    <label for="breakblepart3">Breakblepart</label>
+                    <select name="breakblepart3" id="breakblepart3">
+                      <option value="head">Head</option>
+                      <option value="body">Body</option>
+                      <option value="wings">Wings</option>
+                      <option value="leftwing">Left Wing</option>
+                      <option value="rightwing">Right Wing</option>
+                      <option value="legs">Legs</option>
+                      <option value="leftleg">Left Leg</option>
+                      <option value="rightleg">Right Leg</option>
+                      <option value="tail">Tail</option>
+                    </select>
+                    <label for="extract3">Extract</label>
+                    <select name="extract3" id="extract3">
+                      <option value="green">Green</option>
+                      <option value="orange">Orange</option>
+                      <option value="red">Red</option>
+                      <option value="white">White</option>
+                    </select>
+
+                    <label for="breakblepart4">Breakblepart</label>
+                    <select name="breakblepart4" id="breakblepart4">
+                      <option value="head">Head</option>
+                      <option value="body">Body</option>
+                      <option value="wings">Wings</option>
+                      <option value="leftwing">Left Wing</option>
+                      <option value="rightwing">Right Wing</option>
+                      <option value="legs">Legs</option>
+                      <option value="leftleg">Left Leg</option>
+                      <option value="rightleg">Right Leg</option>
+                      <option value="tail">Tail</option>
+                    </select>
+                    <label for="extract4">Extract</label>
+                    <select name="extract4" id="extract4">
+                      <option value="green">Green</option>
+                      <option value="orange">Orange</option>
+                      <option value="red">Red</option>
+                      <option value="white">White</option>
+                    </select>
+
+                    <label for="breakblepart5">Breakblepart</label>
+                    <select name="breakblepart5" id="breakblepart5">
+                      <option value="head">Head</option>
+                      <option value="body">Body</option>
+                      <option value="wings">Wings</option>
+                      <option value="leftwing">Left Wing</option>
+                      <option value="rightwing">Right Wing</option>
+                      <option value="legs">Legs</option>
+                      <option value="leftleg">Left Leg</option>
+                      <option value="rightleg">Right Leg</option>
+                      <option value="tail">Tail</option>
+                    </select>
+                    <label for="extract5">Extract</label>
+                    <select name="extract5" id="extract5">
+                      <option value="green">Green</option>
+                      <option value="orange">Orange</option>
+                      <option value="red">Red</option>
+                      <option value="white">White</option>
+                    </select>
+
+                    <label for="breakblepart6">Breakblepart</label>
+                    <select name="breakblepart6" id="breakblepart6">
+                      <option value="head">Head</option>
+                      <option value="body">Body</option>
+                      <option value="wings">Wings</option>
+                      <option value="leftwing">Left Wing</option>
+                      <option value="rightwing">Right Wing</option>
+                      <option value="legs">Legs</option>
+                      <option value="leftleg">Left Leg</option>
+                      <option value="rightleg">Right Leg</option>
+                      <option value="tail">Tail</option>
+                    </select>
+                    <label for="extract6">Extract</label>
+                    <select name="extract6" id="extract6">
+                      <option value="green">Green</option>
+                      <option value="orange">Orange</option>
+                      <option value="red">Red</option>
+                      <option value="white">White</option>
+                    </select>
+
+                    <label for="breakblepart7">Breakblepart</label>
+                    <select name="breakblepart7" id="breakblepart7">
+                      <option value="head">Head</option>
+                      <option value="body">Body</option>
+                      <option value="wings">Wings</option>
+                      <option value="leftwing">Left Wing</option>
+                      <option value="rightwing">Right Wing</option>
+                      <option value="legs">Legs</option>
+                      <option value="leftleg">Left Leg</option>
+                      <option value="rightleg">Right Leg</option>
+                      <option value="tail">Tail</option>
+                    </select>
+                    <label for="extract7">Extract</label>
+                    <select name="extract7" id="extract7">
+                      <option value="green">Green</option>
+                      <option value="orange">Orange</option>
+                      <option value="red">Red</option>
+                      <option value="white">White</option>
+                    </select>
+
+                    <label for="breakblepart8">Breakblepart</label>
+                    <select name="breakblepart8" id="breakblepart8">
+                      <option value="head">Head</option>
+                      <option value="body">Body</option>
+                      <option value="wings">Wings</option>
+                      <option value="leftwing">Left Wing</option>
+                      <option value="rightwing">Right Wing</option>
+                      <option value="legs">Legs</option>
+                      <option value="leftleg">Left Leg</option>
+                      <option value="rightleg">Right Leg</option>
+                      <option value="tail">Tail</option>
+                    </select>
+                    <label for="extract8">Extract</label>
+                    <select name="extract8" id="extract8">
+                      <option value="green">Green</option>
+                      <option value="orange">Orange</option>
+                      <option value="red">Red</option>
+                      <option value="white">White</option>
+                    </select>
+
+                    <label for="breakblepart9">Breakblepart</label>
+                    <select name="breakblepart9" id="breakblepart9">
+                      <option value="head">Head</option>
+                      <option value="body">Body</option>
+                      <option value="wings">Wings</option>
+                      <option value="leftwing">Left Wing</option>
+                      <option value="rightwing">Right Wing</option>
+                      <option value="legs">Legs</option>
+                      <option value="leftleg">Left Leg</option>
+                      <option value="rightleg">Right Leg</option>
+                      <option value="tail">Tail</option>
+                    </select>
+                    <label for="extract9">Extract</label>
+                    <select name="extract" id="extract9">
+                      <option value="green">Green</option>
+                      <option value="orange">Orange</option>
+                      <option value="red">Red</option>
+                      <option value="white">White</option>
+                    </select>
+                  </div>
+                    <!--Campo XIV  - Ailment Resistances-->
+                  <div>
+                    <legend>Campo XIV - Ailment Resistances</legend>
+
+                    <div class="ailment-resistance">
+                      <label for="ailmentresistance">Ailment Resistance</label>
+                      <select name="ailmentresistance" class="ailmentresistance">
+                        <option value="mount">Mount</option>
+                        <option value="stun">Stun</option>
+                        <option value="blast">Blast</option>
+                        <option value="sleep">Sleep</option>
+                        <option value="poison">Poison</option>
+                        <option value="paralysis">Paralysis</option>                      
+                      </select>
+
+                      <label for="initialresistance">Initial Resistance</label>
+                      <input type="number" name="initialresistance" class="initialresistance">
+
+                      <label for="ailmentdecay">Ailment Decay</label>
+                      <input type="text" name="ailmentdecay" class="ailmentdecay">
+
+                      <label for="ailmentdamage">Ailment Damage</label>
+                      <input type="number" name="ailmentdamage" class="ailmentdamage">
+
+                      <label for="ailmentduration">Ailment Duration</label>
+                      <input type="text" name="ailmentduration" class="ailmentduration">
+                    </div>
+
+                    <div class="ailment-resistance">
+                      <label for="ailmentresistance">Ailment Resistance</label>
+                      <select name="ailmentresistance" class="ailmentresistance">
+                        <option value="mount">Mount</option>
+                        <option value="stun">Stun</option>
+                        <option value="blast">Blast</option>
+                        <option value="sleep">Sleep</option>
+                        <option value="poison">Poison</option>
+                        <option value="paralysis">Paralysis</option>                      
+                      </select>
+
+                      <label for="initialresistance">Initial Resistance</label>
+                      <input type="number" name="initialresistance" class="initialresistance">
+
+                      <label for="ailmentdecay">Ailment Decay</label>
+                      <input type="text" name="ailmentdecay" class="ailmentdecay">
+
+                      <label for="ailmentdamage">Ailment Damage</label>
+                      <input type="number" name="ailmentdamage" class="ailmentdamage">
+
+                      <label for="ailmentduration">Ailment Duration</label>
+                      <input type="text" name="ailmentduration" class="ailmentduration">
+                    </div>
+
+                    <div class="ailment-resistance">
+                      <label for="ailmentresistance">Ailment Resistance</label>
+                      <select name="ailmentresistance" class="ailmentresistance">
+                        <option value="mount">Mount</option>
+                        <option value="stun">Stun</option>
+                        <option value="blast">Blast</option>
+                        <option value="sleep">Sleep</option>
+                        <option value="poison">Poison</option>
+                        <option value="paralysis">Paralysis</option>                      
+                      </select>
+
+                      <label for="initialresistance">Initial Resistance</label>
+                      <input type="number" name="initialresistance" class="initialresistance">
+
+                      <label for="ailmentdecay">Ailment Decay</label>
+                      <input type="text" name="ailmentdecay" class="ailmentdecay">
+
+                      <label for="ailmentdamage">Ailment Damage</label>
+                      <input type="number" name="ailmentdamage" class="ailmentdamage">
+
+                      <label for="ailmentduration">Ailment Duration</label>
+                      <input type="text" name="ailmentduration" class="ailmentduration">
+                    </div>
+
+                    <div class="ailment-resistance">
+                      <label for="ailmentresistance">Ailment Resistance</label>
+                      <select name="ailmentresistance" class="ailmentresistance">
+                        <option value="mount">Mount</option>
+                        <option value="stun">Stun</option>
+                        <option value="blast">Blast</option>
+                        <option value="sleep">Sleep</option>
+                        <option value="poison">Poison</option>
+                        <option value="paralysis">Paralysis</option>                      
+                      </select>
+
+                      <label for="initialresistance">Initial Resistance</label>
+                      <input type="number" name="initialresistance" class="initialresistance">
+
+                      <label for="ailmentdecay">Ailment Decay</label>
+                      <input type="text" name="ailmentdecay" class="ailmentdecay">
+
+                      <label for="ailmentdamage">Ailment Damage</label>
+                      <input type="number" name="ailmentdamage" class="ailmentdamage">
+
+                      <label for="ailmentduration">Ailment Duration</label>
+                      <input type="text" name="ailmentduration" class="ailmentduration">
+                    </div>
+
+                    <div class="ailment-resistance">
+                      <label for="ailmentresistance">Ailment Resistance</label>
+                      <select name="ailmentresistance" class="ailmentresistance">
+                        <option value="mount">Mount</option>
+                        <option value="stun">Stun</option>
+                        <option value="blast">Blast</option>
+                        <option value="sleep">Sleep</option>
+                        <option value="poison">Poison</option>
+                        <option value="paralysis">Paralysis</option>                      
+                      </select>
+
+                      <label for="initialresistance">Initial Resistance</label>
+                      <input type="number" name="initialresistance" class="initialresistance">
+
+                      <label for="ailmentdecay">Ailment Decay</label>
+                      <input type="text" name="ailmentdecay" class="ailmentdecay">
+
+                      <label for="ailmentdamage">Ailment Damage</label>
+                      <input type="number" name="ailmentdamage" class="ailmentdamage">
+
+                      <label for="ailmentduration">Ailment Duration</label>
+                      <input type="text" name="ailmentduration" class="ailmentduration">
+                    </div>
+                  </div>
+                  <!--Campo XV  - Rage-->
+                  <div>
+                    <legend>Campo XV - Rage</legend>
                     
+                    <label for="enrageThreshold">Enrage Threshold</label>
+                    <input type="text" name="enrageThreshold" id="enrageThreshold" required>
+
+                    <label for="enrageDuration">Enrage Duration</label>
+                    <input type="text" name="enrageDuration" id="enrageDuration" required>
+
+                    <label for="enrageAttackMod">Enrage Attack Mod</label>
+                    <input type="text" name="enrageAttackMod" id="enrageAttackMod" required>
+
+                    <label for="enrageDefenseMod">Enrage Defense Mod</label>
+                    <input type="text" name="enrageDefenseMod" id="enrageDefenseMod" required>
+
+                    <label for="enrageSpeedMod">Enrage Speed Mod</label>
+                    <input type="text" name="enrageSpeedMod" id="enrageSpeedMod" required>
+
+                    <label for="exhaustSpeed">Exhaust Speed</label>
+                    <input type="text" name="exhaustSpeed" id="exhaustSpeed" required>
+
+                    <label for="exhaustDuration">Exhaust Duration</label>
+                    <input type="text" name="exhaustDuration" id="exhaustDuration" required>
+                  </div> 
+                  <!--Campo XVI  - Available at-->
+                  <div>
+                    <legend>Campo XVI  - Available at</legend>
+
+                    <label for="availableat">Available at</label>
+                    <input type="text" id="availableat" name="availableat" required>
+                  </div>
+                  <!--Campo XVII  - Invader-->
+                  <div>
+                    <legend>Campo XVII  - Invader</legend>
+
+                    <label for="invader">Invader</label>
+                    <select name="invader" id="invader">
+                      <option value="yes">Yes</option>
+                      <option value="no">No</option>
+                    </select>                    
+                  </div>
+                  <!--Campo - Rewards-->
+                  <div>
+                    <!--Campo XVIII  - Low Rank rewards-->
+                    <legend>Campo XVIII / XIX / XX - Rewards from Low to Master Ranks</legend>
+                    <div>
+                    <legend>Low Rank Rewards</legend>
+                    
+                    <div class="low-rank-reward">
+                      <label for="lowrankreward">Low Rank Reward</label>
+                      <input type="text" name="lowrankreward" required>
+                      
+                      <div class="low-rank-reward-method">
+                        <label for="lowrankrewardmethod">Low Rank Reward Method</label>
+                        <input type="text" name="lowrankrewardmethod" required>
+
+                        <label for="lowrankrewardchance">Low Rank Reward Chance</label>
+                        <input type="text" name="lowrankrewardchance" required>
+                      </div>                      
+                      <!-- Button to add more Reward Methods -->
+                      <button type="button" class="addRewardMethod" data-reward-id="1">Add Reward Method</button>
+                    </div>
+                    <!-- Add a new button for creating new Rewards -->
+                    <button type="button" id="addLowRankReward">Add Low Rank Reward</button>
+                    </div>
+                    <!--Campo XIX  - High Rank rewards-->
+                    <div>
+                    <legend>High Rank Rewards</legend>
+                    
+                    <div class="high-rank-reward">
+                      <label for="highrankreward">High Rank Reward</label>
+                      <input type="text" name="highrankreward" required>
+                      
+                      <div class="high-rank-reward-method">
+                        <label for="highrankrewardmethod">High Rank Reward Method</label>
+                        <input type="text" name="highrankrewardmethod" required>
+
+                        <label for="highrankrewardchance">High Rank Reward Chance</label>
+                        <input type="text" name="highrankrewardchance" required>
+                      </div>                      
+                      <!-- Button to add more Reward Methods -->
+                      <button type="button" class="addRewardMethod" data-reward-id="1">Add Reward Method</button>
+                    </div>
+                    <!-- Add a new button for creating new Rewards -->
+                    <button type="button" id="addHighRankReward">Add High Rank Reward</button>
+                    </div>
+                    <!--Campo XX  - Master Rank rewards-->
+                    <div>
+                    <legend>Master Rank Rewards</legend>
+                    
+                    <div class="master-rank-reward">
+                      <label for="masterrankreward">Master Rank Reward</label>
+                      <input type="text" name="masterrankreward" required>
+                      
+                      <div class="master-rank-reward-method">
+                        <label for="masterrankrewardmethod">Master Rank Reward Method</label>
+                        <input type="text" name="Masterrankrewardmethod" required>
+
+                        <label for="masterrankrewardchance">Master Rank Reward Chance</label>
+                        <input type="text" name="masterrankrewardchance" required>
+                      </div>                      
+                      <!-- Button to add more Reward Methods -->
+                      <button type="button" class="addRewardMethod" data-reward-id="1">Add Reward Method</button>
+                    </div>
+                    <!-- Add a new button for creating new Rewards -->
+                    <button type="button" id="addMasterRankReward">Add Master Rank Reward</button>
+                    </div>
+                  </div>                  
+                  <!--Campo XXI  - Icon-->
+                  <div>
+                    <legend>Campo XXI - Icon</legend>
+
+                    <label for="icon">Monster Icon</label>
+                    <input type="url" name="icon" id="icon">
+                  </div>
+                  <!--Campo XXII  - Image-->
+                  <div>
+                    <legend>Campo XXII - Image</legend>
+
+                    <label for="image">Monster Image</label>
+                    <input type="url" name="image" id="image">
+                  </div>  
+                  
                     <button id="btn-create">Adicionar Monstro</button>
                   </form>
             </section>
