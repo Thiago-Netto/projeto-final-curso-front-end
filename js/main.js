@@ -72,9 +72,21 @@ const generateElements = (monsters) => {
         }
     };
 
+    const lastId = () =>{
+        try{
+            const lastMonstroIds = data.map(monstro => monstro.id);
+            const lastId = Math.max(...lastMonstroIds);
+            return lastId;
+        } catch (error) {
+            console.error('Error fetching highest ID from API:', error);
+            throw error;
+        }
+    }
+
     carregarMonstros();
     carregarMonstrosPequenos();
     carregarMonstrosGrandes();
+    lastId();
 };
 
 async function createNewMonstro(monstro) {
@@ -99,6 +111,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const addHighRankRewardMethodButton = document.getElementById('addHighRankRewardMethod');
     const addMasterRankRewardButton = document.getElementById('addMasterRankReward');
     const addMasterRankRewardMethodButton = document.getElementById('addMasterRankRewardMethod');
+
+    const getLastId = LastId();
 
     createMonsterButton.addEventListener('click', function (event) {
         event.preventDefault();
@@ -182,7 +196,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
     const monstro = {
-        id : index + 1,
+        id : getLastId+1,
         name: document.getElementById('name').value,
         monsterclass: document.getElementById('monsterclass').value,
         type: document.getElementById('type').value,
