@@ -17,8 +17,6 @@
           "habitat": "Guiding Lands"
         }
       ],
-      "generation": "second",
-      "introduction": "Iceborne Expansion",
       "description": "Herbivores of the tundra that are slightly more aggressive than Kelbi, using their horns to fend off any attacker.",
       "elements": null,
       "ailments": null,
@@ -210,8 +208,6 @@
           "exhaustduration": "Low Rank 120 seconds, High Rank 120 seconds and Master Rank 120 seconds"
         }
       ],
-      "availableat": "Master Rank",
-      "invader": "no",
       "lowrankrewards": null,
       "highrankrewards": null,
       "masterrankrewards": [
@@ -258,8 +254,6 @@
           "habitat": "Guiding Lands"
         }
       ],
-      "generation": "first",
-      "introduction": "Monster Hunter World Base Game",
       "description": "Herbivores that inhabits the Wildspire Waste. They've developed particularly hard hide to ward off attackers, and are known to gather in groups to defend themselves.",
       "elements": null,
       "ailments": null,
@@ -446,8 +440,6 @@
           "exhaustduration": "Low Rank 120 seconds, High Rank 120 seconds and Master Rank 120 seconds"
         }
       ],
-      "availableat": "Low Rank and beyond",
-      "invader": "no",
       "lowrankrewards": [
         {
           "id": 1,
@@ -503,8 +495,6 @@
           "habitat": "Secluded Valley"
         }
       ],
-      "generation": "third",
-      "introduction": "Iceborne expanssion version 14.00 - July, 9 2020",
       "description": "Known as a symbol of destruction, people fear even uttering its name. It's rumored to control all of the elements, but most, if not all, records of its existence have been burned.",
       "elements": [
         {
@@ -982,8 +972,6 @@
           "exhaustduration": "Low Rank 120 seconds, High Rank 120 seconds and Master Rank 120 seconds"
         }
       ],
-      "availableat": "Master Rank",
-      "invader": "no",
       "lowrankrewards": null,
       "highrankrewards": null,
       "masterrankrewards": [
