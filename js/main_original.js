@@ -113,6 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const addMasterRankRewardMethodButton = document.getElementById('addMasterRankRewardMethod');
 
     const getLastId = LastId();
+    
 
     createMonsterButton.addEventListener('click', function (event) {
         event.preventDefault();
