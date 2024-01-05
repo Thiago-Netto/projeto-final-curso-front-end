@@ -386,6 +386,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     
             highRankRewardMethodContainersNew.appendChild(newHighRankRewardMethodContainer);                    
         } 
+        const highRankRewardsContainer = document.getElementById('high-rank-rewards-container');
+        const highRankRewards = Array.from(highRankRewardsContainer.getElementsByClassName('high-rank-reward')).map(container => {
+            const rewardContainer = container.querySelector('.high-rank-reward-method');
+
+            return {
+                highrankreward: container.querySelector('.highrankreward').value,
+                highrankrewardmethod: rewardContainer.querySelector('.highrankrewardmethod').value,
+                highrankrewardchance: rewardContainer.querySelector('.highrankrewardchance').value,
+            };
+        });
         
         //responsible for master rank rewards
         const createMasterRankReward = () => {
@@ -442,44 +452,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     
             masterRankRewardMethodContainersNew.appendChild(newMasterRankRewardMethodContainer);
         }
-
-        //responsible for icon
-        //responsible for image
-
-        const monstro = {};
-
-        createNewMonstro(monstro);
-    })
-
-})
-
-const monstro = {
-         
-
-}; 
-
-    const lowRankRewardsContainer = document.getElementById('low-rank-rewards-container');
-        const lowRankRewards = Array.from(lowRankRewardsContainer.getElementsByClassName('low-rank-reward')).map(container => {
-            const rewardContainer = container.querySelector('.low-rank-reward-method');
-
-            return {
-                lowrankreward: container.querySelector('.lowrankreward').value,
-                lowrankrewardmethod: rewardContainer.querySelector('.lowrankrewardmethod').value,
-                lowrankrewardchance: rewardContainer.querySelector('.lowrankrewardchance').value,
-            };
-        });
-
-        const highRankRewardsContainer = document.getElementById('high-rank-rewards-container');
-        const highRankRewards = Array.from(highRankRewardsContainer.getElementsByClassName('high-rank-reward')).map(container => {
-            const rewardContainer = container.querySelector('.high-rank-reward-method');
-
-            return {
-                highrankreward: container.querySelector('.highrankreward').value,
-                highrankrewardmethod: rewardContainer.querySelector('.highrankrewardmethod').value,
-                highrankrewardchance: rewardContainer.querySelector('.highrankrewardchance').value,
-            };
-        });
-
         const masterRankRewardsContainer = document.getElementById('master-rank-rewards-container');
         const masterRankRewards = Array.from(masterRankRewardsContainer.getElementsByClassName('master-rank-reward')).map(container => {
             const rewardContainer = container.querySelector('.high-rank-reward-method');
@@ -490,3 +462,16 @@ const monstro = {
                 highrankrewardchance: rewardContainer.querySelector('.highrankrewardchance').value,
             };
         });
+
+        //responsible for icon
+        const icon = document.getElementById('icon').value;
+
+        //responsible for image
+        const image = document.getElementById('image').value;
+
+        const monstro = {};
+
+        createNewMonstro(monstro);
+    })
+
+})
