@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded',  () => {
     initializeLowRankRewardButton(document.getElementById('low-rank-rewards-container'));
 
 
-    createMonsterButton.addEventListener('click', function (event) {
+    createMonsterButton.addEventListener('click', (event) => {
         event.preventDefault();
     
         const breakablepartContainers = breakablepartsContainer.getElementsByClassName('breakablepart-container');
@@ -168,7 +168,6 @@ document.addEventListener('DOMContentLoaded',  () => {
     const bodyParts = [];
 
         const bodyPartNames = ['head', 'body', 'wings', 'arms', 'legs', 'tail'];
-
         bodyPartNames.forEach(bodyPartName => {
             const bodyPartObj = {
                 bodypart: bodyPartName,
@@ -220,11 +219,11 @@ document.addEventListener('DOMContentLoaded',  () => {
     
 }),
     
-    addBreakablePartButton.addEventListener('click', function () {
+    addBreakablePartButton.addEventListener('click', () =>{
         createBreakablePart();
     });
 
-    function createBreakablePart() {
+    const createBreakablePart = () => {
         const uniqueId = new Date().getTime(); // Generate a unique ID
 
         const newBreakablePartContainer = document.createElement('div');
@@ -261,14 +260,14 @@ document.addEventListener('DOMContentLoaded',  () => {
         initializeBreakablePartButton(newBreakablePartContainer);
     }
     
-    function initializeBreakablePartButton(container) {
+    const initializeBreakablePartButton = (container) => {
         const createBreakablePartButton = container.querySelector('.create-breakablepart');
         createBreakablePartButton.addEventListener('click', function () {
             createBreakablePart();
         });
     }
 
-    function initializeLowRankRewardButton(container) {
+    const initializeLowRankRewardButton = (container) => {
         const addRewardMethodButton = container.querySelector('.addRewardMethod');
         const addLowRankRewardMethodButtonNew = container.querySelector('.addLowRankRewardMethodNew-');
     
@@ -279,24 +278,21 @@ document.addEventListener('DOMContentLoaded',  () => {
             });
         } else if (addRewardMethodButton) {
             addRewardMethodButton.addEventListener('click', function () {
-                // Identify the correct low-rank-reward container
                 const parentLowRankReward = this.closest('.low-rank-reward');
                 createLowRankRewardMethod(parentLowRankReward);
             });
         }
-        // Handle the else case if needed
-        // ... Other code
     }
     
 
-    function initializeHighRankRewardButton(container) {
+    const initializeHighRankRewardButton = (container) => {
         const addRewardMethodButton = container.querySelector('.addRewardMethod');
-        addRewardMethodButton.addEventListener('click', function () {
+        addRewardMethodButton.addEventListener('click', () => {
             createRewardMethod(container, createHighRankRewardMethod);
         });
     }
 
-    function initializeMasterRankRewardButton(container) {
+    const initializeMasterRankRewardButton = (container) => {
         const addRewardMethodButton = container.querySelector('.addRewardMethod');
         addRewardMethodButton.addEventListener('click', function () {
             createRewardMethod(container, createMasterRankRewardMethod);
@@ -308,7 +304,7 @@ document.addEventListener('DOMContentLoaded',  () => {
         createLowRankReward();
     });
 
-    function createLowRankReward() {
+    const createLowRankReward = () => {
         const lowRankRewardsContainer = document.getElementById('low-rank-rewards-container');
         const uniqueId = new Date().getTime(); // Generate a unique ID
     
@@ -339,7 +335,7 @@ document.addEventListener('DOMContentLoaded',  () => {
     createLowRankRewardMethod(parentLowRankReward);
     })
 
-    function createLowRankRewardMethod(container) {
+    const createLowRankRewardMethod = (container) => {
         const uniqueId = new Date().getTime();
             
         const newLowRankRewardMethodContainer = document.createElement('div');
@@ -351,15 +347,14 @@ document.addEventListener('DOMContentLoaded',  () => {
             <label for="lowrankrewardchance-${uniqueId}">Low Rank Reward Chance</label>
             <input type="text" name="lowrankrewardchance" class="lowrankrewardchance" required>
         `;
-    
-        // Append the new method to the container
+            
         parentLowRankReward.appendChild(newLowRankRewardMethodContainer);
     }
-    addHighRankRewardButton.addEventListener('click', function () {
+    addHighRankRewardButton.addEventListener('click', () => {
         createHighRankReward();
     });
 
-    function createHighRankReward() {
+    const createHighRankReward = () => {
         const highRankRewardsContainer = document.getElementById('high-rank-rewards-container');
         const uniqueId = new Date().getTime(); // Generate a unique ID
 
@@ -384,11 +379,11 @@ document.addEventListener('DOMContentLoaded',  () => {
         initializeHighRankRewardButton(newHighRankRewardContainer);
     }
 
-    addHighRankRewardMethodButton.addEventListener('click', function (){
+    addHighRankRewardMethodButton.addEventListener('click', () => {
         createHighRankRewardMethod();
     })
 
-    function createHighRankRewardMethod() {
+    const createHighRankRewardMethod = () => {
         const highRankRewardMethodContainers = document.getElementsByClassName('high-rank-reward-method');
         const uniqueId = new Date().getTime();
     
@@ -402,17 +397,16 @@ document.addEventListener('DOMContentLoaded',  () => {
             <input type="text" name="highrankrewardchance" class="highrankrewardchance" required>
         `;
     
-        // Select the correct container based on the index (0 in this case)
         highRankRewardMethodContainers[0].appendChild(newHighRankRewardMethodContainer);
     
         initializeRewardMethodButton(newHighRankRewardMethodContainer, createHighRankRewardMethod);
     } 
 
-    addMasterRankRewardButton.addEventListener('click', function () {
+    addMasterRankRewardButton.addEventListener('click', () => {
         createMasterRankReward();
     });
 
-    function createMasterRankReward() {
+    const createMasterRankReward = () => {
         const masterRankRewardsContainer = document.getElementById('master-rank-rewards-container');
         const uniqueId = new Date().getTime(); // Generate a unique ID
 
@@ -437,18 +431,18 @@ document.addEventListener('DOMContentLoaded',  () => {
         initializeMasterRankRewardButton(newMasterRankRewardContainer);
     }
 
-    function initializeMasterRankRewardButton(container) {
+    const initializeMasterRankRewardButton = (container) => {
         const addRewardMethodButton = container.querySelector('.addRewardMethod');
-        addRewardMethodButton.addEventListener('click', function () {
+        addRewardMethodButton.addEventListener('click', () => {
             createRewardMethod(container, createMasterRankRewardMethod);
         });
     }
 
-    addMasterRankRewardMethodButton.addEventListener('click', function (){
+    addMasterRankRewardMethodButton.addEventListener('click', () => {
         createMasterRankRewardMethod();
     })
 
-    function createMasterRankRewardMethod() {
+    const createMasterRankRewardMethod = () => {
         const masterRankRewardMethodContainers = document.getElementsByClassName('master-rank-reward-method');
         const uniqueId = new Date().getTime();
     
@@ -462,7 +456,6 @@ document.addEventListener('DOMContentLoaded',  () => {
             <input type="text" name="masterrankrewardchance" class="masterrankrewardchance" required>
         `;
     
-        // Select the correct container based on the index (0 in this case)
         masterRankRewardMethodContainers[0].appendChild(newMasterRankRewardMethodContainer);
     
         initializeRewardMethodButton(newMasterRankRewardMethodContainer, createMasterRankRewardMethod);

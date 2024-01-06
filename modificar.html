@@ -105,23 +105,23 @@
                 
                 <form id="monsterform">
                     <!--Campo I  - Name-->
-                  <!-- <div>
+                  <fieldset>
                     <legend>Campo I - Name</legend>
 
                     <label for="name">Name</label>
                     <br>
                     <input type="text" id="name" name="name" required>
-                  </div> -->
+                  </fieldset>
                     <!--Campo II  - Monster Class-->
-                  <!-- <div>
+                  <fieldset>
                     <legend>Campo II - Monster Class</legend>
 
                     <label for="monsterclass">Monster Class</label>
                     <br>
                     <input type="text" id="monsterclass" name="monsterclass" required>
-                  </div> -->
+                  </fieldset>
                     <!--Campo III  - Type-->
-                  <!-- <div>
+                  <fieldset>
                     <legend>Campo III - Type</legend>
 
                     <label for="type">Type</label>
@@ -130,25 +130,25 @@
                       <option value="small">small</option>
                       <option value="large">large</option>
                     </select>
-                  </div> -->
+                  </fieldset>
                     <!--Campo IV  - Size-->
-                  <!-- <div>
+                  <fieldset>
                     <legend>Campo IV - Size</legend>
 
                     <label for="size">Size</label>
                     <br>
                     <input type="text" id="size" name="size" required>
-                  </div> -->
+                  </fieldset>
                     <!--Campo V  - Health-->
-                  <!-- <div>
+                  <fieldset>
                     <legend>Campo V - Health</legend>
 
                     <label for="health">Health</label>
                     <br>
                     <input type="text" name="health" id="health" required>
-                  </div> -->
+                  </fieldset>
                     <!--Campo VI  - Habitats-->
-                  <!-- <div>
+                  <fieldset>
                     <legend>Campo VI - Habitats</legend>
 
                     <label for="habitats">Habitats</label>
@@ -258,17 +258,17 @@
                       </label>
                     </div>
                     
-                  </div> -->
+                  </fieldset>
                     <!--Campo IX  - Description-->
-                  <!-- <div>
+                  <fieldset>
                     <legend>Campo IX - Description</legend>
 
                     <label for="description">Description</label>
                     <br>
                     <textarea name="description" id="description" cols="60" rows="5" required></textarea>
-                  </div> -->
+                  </fieldset>
                     <!--Campo X  - Elements-->
-                  <!-- <div>
+                  <fieldset>
                     <legend>Campo X - Elements</legend>
 
                     <label for="elements">Elements</label>
@@ -307,9 +307,9 @@
                         <input type="checkbox" name="elements" value="dragon">
                       </label>
                     </div>
-                  </div> -->
+                  </fieldset>
                     <!--Campo XI  - Ailments-->
-                  <!-- <div>
+                  <fieldset>
                     <legend>Campo XI - Ailments</legend>
 
                     <label for="ailments">Ailments</label>
@@ -411,9 +411,9 @@
                         <input type="checkbox" name="ailments" value="effluvium">
                       </label>
                     </div>                    
-                  </div> -->
+                  </fieldset>
                     <!--Campo XII  - Bodyparts-->
-                  <!-- <div>
+                  <fieldset>
                     <legend>Campo XII - Bodyparts</legend>
 
                     
@@ -614,9 +614,9 @@
                     <label for="tailStamina">Tail Stamina Damage</label>
                     <input type="number" name="tailStamina" id="tailStamina" required>
                     </div><br>
-                  </div> -->
+                  </fieldset>
                     <!--Campo XIII  - Breakbleparts-->
-                  <div>
+                  <fieldset>
                     <legend>Campo XIII - Breakbleparts</legend>                                     
                     <div id="breakableparts-container" class="breakableparts-container">
                       <label for="breakablepart">Breakblepart</label>
@@ -644,9 +644,9 @@
                       </select>
                       <button id="create-breakablepart" class="create-breakablepart">Add Breakable Part and Extract</button>
                     </div>
-                  </div>
+                  </fieldset>
                     <!--Campo XIV  - Ailment Resistances-->
-                  <div id="ailments-resistances-container">
+                  <fieldset id="ailments-resistances-container">
                     <legend>Campo XIV - Ailment Resistances</legend>
 
                     <div class="ailment-resistance-mount">
@@ -749,9 +749,9 @@
                       <label for="ailmentduration-paralysis">Ailment Duration</label>
                       <input type="text" name="ailmentduration-paralysis" class="ailmentduration-paralysis">
                     </div>
-                  </div>
+                  </fieldset>
                   <!--Campo XV  - Rage-->
-                  <div id="rage-container">
+                  <fieldset id="rage-container">
                     <legend>Campo XV - Rage</legend>
                     
                     <label for="enrageThreshold">Enrage Threshold</label><br>
@@ -774,33 +774,287 @@
 
                     <label for="exhaustDuration">Exhaust Duration</label><br>
                     <input type="text" name="exhaustDuration" id="exhaustDuration" required><br>
-                  </div>                   
+                  </fieldset>                   
                   <!--Campo - Rewards-->
-                  <div>
-                    <!--Campo XVIII  - Low Rank rewards-->
+                  <!--Campo XVIII  - Low Rank rewards-->
                     <legend>Campo XVIII / XIX / XX - Rewards from Low to Master Ranks</legend>
-                    <div>
+                    <fieldset>
                     <legend>Low Rank Rewards</legend>
                     
                     <div class="low-rank-reward" id="low-rank-rewards-container">
                       <label for="lowrankreward">Low Rank Reward</label>
                       <input type="text" name="lowrankreward" required>
                       
-                      <div class="low-rank-reward-method" id="low-rank-reward-method">
+                      <div class="low-rank-reward-method" id="low-rank-reward-method-01">
                         <label for="lowrankrewardmethod">Low Rank Reward Method</label>
+                        <select name="lowrankrewardmethod" id="lowrankrewardmethod1">
+                          <option value="null">Null</option>
+                          <option value="carve">Carve</option>
+                          <option value="drop">Shiny Drop</option>
+                          <option value="quest">Quest Reward</option>
+                          <option value="head">Break Head</option>
+                          <option value="body">Break Body</option>
+                          <option value="wing">Break Wing</option>
+                          <option value="arm">Break Arm</option>
+                          <option value="leg">Break Leg</option>
+                          <option value="tail">Break Tail</option>
+                          <option value="carvetail">Carve Severed Tail</option>
+                          <option value="palicoes">Palicoes</option>
+                          <option value="plunderblade">Plunderblade</option>
+                        </select>
                         <input type="text" name="lowrankrewardmethod" required>
 
                         <label for="lowrankrewardchance">Low Rank Reward Chance</label>
                         <input type="text" name="lowrankrewardchance" required>
-                      </div>                      
-                      <!-- Button to add more Reward Methods -->
-                      <button type="button" id="addLowRankRewardMethod" class="addLowRankRewardMethod" data-reward-id="1">Add Reward Method</button>
-                    </div>
-                    <!-- Add a new button for creating new Rewards -->
+                      </div>
+                      <div class="low-rank-reward-method" id="low-rank-reward-method-02">
+                        <label for="lowrankrewardmethod">Low Rank Reward Method</label>
+                        <select name="lowrankrewardmethod" id="lowrankrewardmethod1">
+                          <option value="null">Null</option>
+                          <option value="carve">Carve</option>
+                          <option value="drop">Shiny Drop</option>
+                          <option value="quest">Quest Reward</option>
+                          <option value="head">Break Head</option>
+                          <option value="body">Break Body</option>
+                          <option value="wing">Break Wing</option>
+                          <option value="arm">Break Arm</option>
+                          <option value="leg">Break Leg</option>
+                          <option value="tail">Break Tail</option>
+                          <option value="carvetail">Carve Severed Tail</option>
+                          <option value="palicoes">Palicoes</option>
+                          <option value="plunderblade">Plunderblade</option>
+                        </select>
+                        <input type="text" name="lowrankrewardmethod" required>
+
+                        <label for="lowrankrewardchance">Low Rank Reward Chance</label>
+                        <input type="text" name="lowrankrewardchance" required>
+                      </div>
+                      <div class="low-rank-reward-method" id="low-rank-reward-method-03">
+                        <label for="lowrankrewardmethod">Low Rank Reward Method</label>
+                        <select name="lowrankrewardmethod" id="lowrankrewardmethod1">
+                          <option value="null">Null</option>
+                          <option value="carve">Carve</option>
+                          <option value="drop">Shiny Drop</option>
+                          <option value="quest">Quest Reward</option>
+                          <option value="head">Break Head</option>
+                          <option value="body">Break Body</option>
+                          <option value="wing">Break Wing</option>
+                          <option value="arm">Break Arm</option>
+                          <option value="leg">Break Leg</option>
+                          <option value="tail">Break Tail</option>
+                          <option value="carvetail">Carve Severed Tail</option>
+                          <option value="palicoes">Palicoes</option>
+                          <option value="plunderblade">Plunderblade</option>
+                        </select>
+                        <input type="text" name="lowrankrewardmethod" required>
+
+                        <label for="lowrankrewardchance">Low Rank Reward Chance</label>
+                        <input type="text" name="lowrankrewardchance" required>
+                      </div> 
+                      <div class="low-rank-reward-method" id="low-rank-reward-method-04">
+                        <label for="lowrankrewardmethod">Low Rank Reward Method</label>
+                        <select name="lowrankrewardmethod" id="lowrankrewardmethod1">
+                          <option value="null">Null</option>
+                          <option value="carve">Carve</option>
+                          <option value="drop">Shiny Drop</option>
+                          <option value="quest">Quest Reward</option>
+                          <option value="head">Break Head</option>
+                          <option value="body">Break Body</option>
+                          <option value="wing">Break Wing</option>
+                          <option value="arm">Break Arm</option>
+                          <option value="leg">Break Leg</option>
+                          <option value="tail">Break Tail</option>
+                          <option value="carvetail">Carve Severed Tail</option>
+                          <option value="palicoes">Palicoes</option>
+                          <option value="plunderblade">Plunderblade</option>
+                        </select>
+                        <input type="text" name="lowrankrewardmethod" required>
+
+                        <label for="lowrankrewardchance">Low Rank Reward Chance</label>
+                        <input type="text" name="lowrankrewardchance" required>
+                      </div> 
+                      <div class="low-rank-reward-method" id="low-rank-reward-method-05">
+                        <label for="lowrankrewardmethod">Low Rank Reward Method</label>
+                        <select name="lowrankrewardmethod" id="lowrankrewardmethod1">
+                          <option value="null">Null</option>
+                          <option value="carve">Carve</option>
+                          <option value="drop">Shiny Drop</option>
+                          <option value="quest">Quest Reward</option>
+                          <option value="head">Break Head</option>
+                          <option value="body">Break Body</option>
+                          <option value="wing">Break Wing</option>
+                          <option value="arm">Break Arm</option>
+                          <option value="leg">Break Leg</option>
+                          <option value="tail">Break Tail</option>
+                          <option value="carvetail">Carve Severed Tail</option>
+                          <option value="palicoes">Palicoes</option>
+                          <option value="plunderblade">Plunderblade</option>
+                        </select>
+                        <input type="text" name="lowrankrewardmethod" required>
+
+                        <label for="lowrankrewardchance">Low Rank Reward Chance</label>
+                        <input type="text" name="lowrankrewardchance" required>
+                      </div> 
+                      <div class="low-rank-reward-method" id="low-rank-reward-method-06">
+                        <label for="lowrankrewardmethod">Low Rank Reward Method</label>
+                        <select name="lowrankrewardmethod" id="lowrankrewardmethod1">
+                          <option value="null">Null</option>
+                          <option value="carve">Carve</option>
+                          <option value="drop">Shiny Drop</option>
+                          <option value="quest">Quest Reward</option>
+                          <option value="head">Break Head</option>
+                          <option value="body">Break Body</option>
+                          <option value="wing">Break Wing</option>
+                          <option value="arm">Break Arm</option>
+                          <option value="leg">Break Leg</option>
+                          <option value="tail">Break Tail</option>
+                          <option value="carvetail">Carve Severed Tail</option>
+                          <option value="palicoes">Palicoes</option>
+                          <option value="plunderblade">Plunderblade</option>
+                        </select>
+                        <input type="text" name="lowrankrewardmethod" required>
+
+                        <label for="lowrankrewardchance">Low Rank Reward Chance</label>
+                        <input type="text" name="lowrankrewardchance" required>
+                      </div> 
+                      <div class="low-rank-reward-method" id="low-rank-reward-method-07">
+                        <label for="lowrankrewardmethod">Low Rank Reward Method</label>
+                        <select name="lowrankrewardmethod" id="lowrankrewardmethod1">
+                          <option value="null">Null</option>
+                          <option value="carve">Carve</option>
+                          <option value="drop">Shiny Drop</option>
+                          <option value="quest">Quest Reward</option>
+                          <option value="head">Break Head</option>
+                          <option value="body">Break Body</option>
+                          <option value="wing">Break Wing</option>
+                          <option value="arm">Break Arm</option>
+                          <option value="leg">Break Leg</option>
+                          <option value="tail">Break Tail</option>
+                          <option value="carvetail">Carve Severed Tail</option>
+                          <option value="palicoes">Palicoes</option>
+                          <option value="plunderblade">Plunderblade</option>
+                        </select>
+                        <input type="text" name="lowrankrewardmethod" required>
+
+                        <label for="lowrankrewardchance">Low Rank Reward Chance</label>
+                        <input type="text" name="lowrankrewardchance" required>
+                      </div> 
+                      <div class="low-rank-reward-method" id="low-rank-reward-method-08">
+                        <label for="lowrankrewardmethod">Low Rank Reward Method</label>
+                        <select name="lowrankrewardmethod" id="lowrankrewardmethod1">
+                          <option value="null">Null</option>
+                          <option value="carve">Carve</option>
+                          <option value="drop">Shiny Drop</option>
+                          <option value="quest">Quest Reward</option>
+                          <option value="head">Break Head</option>
+                          <option value="body">Break Body</option>
+                          <option value="wing">Break Wing</option>
+                          <option value="arm">Break Arm</option>
+                          <option value="leg">Break Leg</option>
+                          <option value="tail">Break Tail</option>
+                          <option value="carvetail">Carve Severed Tail</option>
+                          <option value="palicoes">Palicoes</option>
+                          <option value="plunderblade">Plunderblade</option>
+                        </select>
+                        <input type="text" name="lowrankrewardmethod" required>
+
+                        <label for="lowrankrewardchance">Low Rank Reward Chance</label>
+                        <input type="text" name="lowrankrewardchance" required>
+                      </div> 
+                      <div class="low-rank-reward-method" id="low-rank-reward-method-09">
+                        <label for="lowrankrewardmethod">Low Rank Reward Method</label>
+                        <select name="lowrankrewardmethod" id="lowrankrewardmethod1">
+                          <option value="null">Null</option>
+                          <option value="carve">Carve</option>
+                          <option value="drop">Shiny Drop</option>
+                          <option value="quest">Quest Reward</option>
+                          <option value="head">Break Head</option>
+                          <option value="body">Break Body</option>
+                          <option value="wing">Break Wing</option>
+                          <option value="arm">Break Arm</option>
+                          <option value="leg">Break Leg</option>
+                          <option value="tail">Break Tail</option>
+                          <option value="carvetail">Carve Severed Tail</option>
+                          <option value="palicoes">Palicoes</option>
+                          <option value="plunderblade">Plunderblade</option>
+                        </select>
+                        <input type="text" name="lowrankrewardmethod" required>
+
+                        <label for="lowrankrewardchance">Low Rank Reward Chance</label>
+                        <input type="text" name="lowrankrewardchance" required>
+                      </div> 
+                      <div class="low-rank-reward-method" id="low-rank-reward-method-10">
+                        <label for="lowrankrewardmethod">Low Rank Reward Method</label>
+                        <select name="lowrankrewardmethod" id="lowrankrewardmethod1">
+                          <option value="null">Null</option>
+                          <option value="carve">Carve</option>
+                          <option value="drop">Shiny Drop</option>
+                          <option value="quest">Quest Reward</option>
+                          <option value="head">Break Head</option>
+                          <option value="body">Break Body</option>
+                          <option value="wing">Break Wing</option>
+                          <option value="arm">Break Arm</option>
+                          <option value="leg">Break Leg</option>
+                          <option value="tail">Break Tail</option>
+                          <option value="carvetail">Carve Severed Tail</option>
+                          <option value="palicoes">Palicoes</option>
+                          <option value="plunderblade">Plunderblade</option>
+                        </select>
+                        <input type="text" name="lowrankrewardmethod" required>
+
+                        <label for="lowrankrewardchance">Low Rank Reward Chance</label>
+                        <input type="text" name="lowrankrewardchance" required>
+                      </div> 
+                      <div class="low-rank-reward-method" id="low-rank-reward-method-11">
+                        <label for="lowrankrewardmethod">Low Rank Reward Method</label>
+                        <select name="lowrankrewardmethod" id="lowrankrewardmethod1">
+                          <option value="null">Null</option>
+                          <option value="carve">Carve</option>
+                          <option value="drop">Shiny Drop</option>
+                          <option value="quest">Quest Reward</option>
+                          <option value="head">Break Head</option>
+                          <option value="body">Break Body</option>
+                          <option value="wing">Break Wing</option>
+                          <option value="arm">Break Arm</option>
+                          <option value="leg">Break Leg</option>
+                          <option value="tail">Break Tail</option>
+                          <option value="carvetail">Carve Severed Tail</option>
+                          <option value="palicoes">Palicoes</option>
+                          <option value="plunderblade">Plunderblade</option>
+                        </select>
+                        <input type="text" name="lowrankrewardmethod" required>
+
+                        <label for="lowrankrewardchance">Low Rank Reward Chance</label>
+                        <input type="text" name="lowrankrewardchance" required>
+                      </div> 
+                      <div class="low-rank-reward-method" id="low-rank-reward-method-12">
+                        <label for="lowrankrewardmethod">Low Rank Reward Method</label>
+                        <select name="lowrankrewardmethod" id="lowrankrewardmethod1">
+                          <option value="null">Null</option>
+                          <option value="carve">Carve</option>
+                          <option value="drop">Shiny Drop</option>
+                          <option value="quest">Quest Reward</option>
+                          <option value="head">Break Head</option>
+                          <option value="body">Break Body</option>
+                          <option value="wing">Break Wing</option>
+                          <option value="arm">Break Arm</option>
+                          <option value="leg">Break Leg</option>
+                          <option value="tail">Break Tail</option>
+                          <option value="carvetail">Carve Severed Tail</option>
+                          <option value="palicoes">Palicoes</option>
+                          <option value="plunderblade">Plunderblade</option>
+                        </select>
+                        <input type="text" name="lowrankrewardmethod" required>
+
+                        <label for="lowrankrewardchance">Low Rank Reward Chance</label>
+                        <input type="text" name="lowrankrewardchance" required>
+                      </div>                        
+                      
+                    <!-- Button for creating new Rewards -->
                     <button type="button" id="addLowRankReward" class="addLowRankReward">Add Low Rank Reward</button>
-                    </div>
+                    </fieldset>
                     <!--Campo XIX  - High Rank rewards-->
-                    <div>
+                    <fieldset>
                     <legend>High Rank Rewards</legend>
                     
                     <div class="high-rank-reward" id="high-rank-rewards-container">
@@ -819,9 +1073,9 @@
                     </div>
                     <!-- Add a new button for creating new Rewards -->
                     <button type="button" id="addHighRankReward" class="addHighRankReward">Add High Rank Reward</button>
-                    </div>
+                    </fieldset>
                     <!--Campo XX  - Master Rank rewards-->
-                    <div>
+                    <fieldset>
                     <legend>Master Rank Rewards</legend>
                     
                     <div class="master-rank-reward" id="master-rank-rewards-container">
@@ -840,23 +1094,21 @@
                     </div>
                     <!-- Add a new button for creating new Rewards -->
                     <button type="button" id="addMasterRankReward" class="addMasterRankReward">Add Master Rank Reward</button>
-                    </div>
-                  </div>                  
+                    </fieldset>                                  
                   <!--Campo XXI  - Icon-->
-                  <div>
+                  <fieldset>
                     <legend>Campo XXI - Icon</legend>
 
                     <label for="icon">Monster Icon</label>
                     <input type="url" name="icon" id="icon">
-                  </div>
+                  </fieldset>
                   <!--Campo XXII  - Image-->
-                  <div>
+                  <fieldset>
                     <legend>Campo XXII - Image</legend>
 
                     <label for="image">Monster Image</label>
                     <input type="url" name="image" id="image">
-                  </div>  
-                  
+                  </fieldset>                    
                     <button id="btn-create">Adicionar Monstro</button>
                 </form>
             </section>
